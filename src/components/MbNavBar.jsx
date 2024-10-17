@@ -18,7 +18,7 @@ const mbNavBar = ({showMbMenu, setShowMbMenu}) => {
                 onClick={() => setShowMbMenu(false)}><FaTimes size={30} color="#434343"/></button>
             </div>
             <ul className="flex flex-col justify-start  gap-10 w-full h-full text-left">
-                {links.map((linkItem, idx) => <li key={idx}><a href={linkItem.url} className="text-[#6F6F6F] font-[400] text-[19px] leading-[24px]">{linkItem.textUrl}</a></li>)}
+                {links.map((linkItem, idx) => <li key={idx}><a href={linkItem.url} className="text-[#6F6F6F] font-graphik font-[400] text-[19px] leading-[24px]">{linkItem.textUrl}</a></li>)}
             </ul>
            
         </nav>

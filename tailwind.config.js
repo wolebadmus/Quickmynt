@@ -11,8 +11,8 @@ export default {
         'custom-gradient': 'linear-gradient(110.62deg, #747474 50.01%, #FFFFFF 101.34%)',
       },
       fontFamily: {
-        'osande': ['', 'sans-serif'], // Add your font here
-        'graphik': ['', 'sans-serif'], // Add Graphik Trial font
+        'graphik': ['Graphik', 'sans-serif'], // Add your font here
+        'osande': ['Osande', 'sans-serif'], // Add Graphik Trial font
       },
     },
   },

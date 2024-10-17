@@ -16,7 +16,7 @@ const SectionFour = () => {
                 </p>
 
                 <p className="max-w-[341px] w-full h-[78px] lg:max-w-[464px] lg:h-[140px] text-[#161616] text-[16px] font-graphik
-                lg:text-[24px] font-osande font-[400] lg:font-[400] leading-[24px] lg:leading-[35px] text-justify lg:text-left">
+                lg:text-[24px] font-graphik font-[400] lg:font-[400] leading-[24px] lg:leading-[35px] text-justify lg:text-left">
                     No cost to employers or employees. Instantly access earnings and, in addition, enjoy health and financial wellness benefits.
                 </p>
             </div>

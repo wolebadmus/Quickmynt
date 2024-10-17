@@ -17,7 +17,10 @@ const SectionOne = () => {
                             QuickMynt delivers a cutting-edge earned wage access platform, giving employees the freedom to access their pay on their terms, with no disruptions to payroll.
                     </p>
                 </div>
-                <button className="z-40 text-[#F3FEF6] font-[500] text-[16.18px] lg:text-[20.95px] leading-[17.8px] lg:leading-[23.05px] bg-[#488559] w-[186.67px] lg:w-[241.57px] h-[38.22px] lg:h-[49.19px] rounded-full z-40 mx-auto lg:mx-0">Request a Demo</button>
+                <button className="z-40 text-[#F3FEF6] font-graphik font-[500] text-[16.18px] lg:text-[20.95px] leading-[17.8px]
+                 lg:leading-[23.05px] bg-[#488559] w-[186.67px] lg:w-[241.57px] h-[38.22px] lg:h-[49.19px]
+                 hover:text-[#488559] hover:bg-[#FFF] hover:border hover:border-[#488559] 
+                 rounded-full z-40 mx-auto lg:mx-0">Request a Demo</button>
             </div>
         </section>
     );
