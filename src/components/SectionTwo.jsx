@@ -11,7 +11,7 @@ const SectionTwo = () => {
     const sub_class = "max-w-[335.21px] lg:max-w-[258px] font-[500] text-[16px] lg:text-[18px] text-[#9D9D9D] leading-[24px] lg:leading-[28px] text-center font-graphik";
 
     return (
-        <section className="max-w-[371px] w-full lg:max-w-[1429px] py-16 flex flex-col justify-center items-center gap-16 ">
+        <section className="max-w-[371px] w-full lg:max-w-[1140px] py-16 flex flex-col justify-center items-center gap-16 ">
 
             <p className="max-w-[341px] lg:max-w-[600px] text-center font-osande font-[700] text-[#161616] lg:font-[600] text-[33.18px] lg:text-[62px] leading-[38.17px] lg:leading-[71.32px]">
                 Unlocking Earnings in <span className="text-[#488559]">3 Simple Steps</span>
