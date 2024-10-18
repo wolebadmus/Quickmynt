@@ -1,3 +1,4 @@
+import SectionEight from "../components/SectionEight";
 import SectionFive from "../components/SectionFive";
 import SectionFour from "../components/SectionFour";
 import SectionOne from "../components/SectionOne";
@@ -20,6 +21,7 @@ const LandingPage = () => {
             <SectionFive />
             <SectionSix />
             <SectionSeven />
+            <SectionEight />
            
         </>
     );
