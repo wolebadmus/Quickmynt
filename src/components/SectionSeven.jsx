@@ -57,7 +57,7 @@ const SectionSeven = () => {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[1200px] lg:h-[2100px]" : "h-[1010px] lg:h-[1550px]"} bg-[#00204C] relative pt-24`}>
+    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[1200px] lg:h-[2100px]" : "h-[1010px] lg:h-[1550px]"} bg-[#00204C] relative pt-14`}>
       <div className="flex flex-col gap-5 items-center">
             <div className="w-full max-w-[341px] lg:max-w-[1140px] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
                 <div className="flex w-full justify-start lg:justify-center items-center ">

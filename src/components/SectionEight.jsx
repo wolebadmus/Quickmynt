@@ -24,11 +24,11 @@ const SectionEight = () => {
 
     return (
         <section className="w-full bg-[#FCEBE3] flex flex-col justify-start items-center gap-10 pb-10">
-            <div className="flex flex-col justify-center items-center max-w-[371px] w-full lg:max-w-[1140px] gap-8 ">
+            <div className="flex flex-col justify-center items-center max-w-[371px] lg:w-full lg:max-w-[1140px] gap-8 ">
 
-                <p className="w-[372px] lg:w-[891px] font-osande lg:font-graphik font-[700] lg:font-[500] text-[30px] lg:text-[48px] leading-[40px] lg:leading-[52.8px] text-center ">We've partnered with leading payroll providers used by most SMBs</p>
+                <p className="max-w-[371px] w-full lg:max-w-[891px] font-osande lg:font-graphik font-[700] lg:font-[500] text-[30px] lg:text-[48px] leading-[40px] lg:leading-[52.8px] text-center ">We've partnered with leading payroll providers used by most SMBs</p>
                 <div className="flex flex-wrap lg:flex-nowrap w-full lg:justify-between items-center">
-                    {icons.map((ico) => <img src={ico.imgsrc} alt="" className={`object-contain ${ico.className} flex-[33.33%] lg:flex-auto mt-3 lg:mt-0`} />)}
+                    {icons.map((ico, idx) => <img src={ico.imgsrc} key={idx} alt="" className={`object-contain ${ico.className} flex-[33.33%] lg:flex-auto mt-3 lg:mt-0`} />)}
                 </div>
                 <p className="font- lg:font-graphik text-[#273238] font-[400] text-[14px] lg:text-[24px] leading-[15.4px] lg:leading-[26.4px] text-center ">and many other payroll providers</p>
             </div>
@@ -38,7 +38,7 @@ const SectionEight = () => {
                     <p className="font-graphik text-[#232E33] font-500 text-[24px] leading-[32px] text-center">
                         Compliance
                     </p>
-                    <p className="font-graphik text-[#525B60] font-400 text-[18px] leading-[26px] text-center w-[377.67px] h-[104px] ">
+                    <p className="font-graphik text-[#525B60] font-400 text-[18px] leading-[26px] text-center max-w-[377.67px] h-[104px] ">
                         Studies show that providing Earned Wage Access (EWA) leads to higher employee satisfaction, increased loyalty, and a stronger workforce
                     </p>
                 </div>
@@ -47,7 +47,7 @@ const SectionEight = () => {
                     <p className="font-graphik text-[#232E33] font-500 text-[24px] leading-[32px] text-center">
                         Security
                     </p>
-                    <p className="font-graphik text-[#525B60] font-400 text-[18px] leading-[26px] text-center w-[377.67px] h-[104px] ">
+                    <p className="font-graphik text-[#525B60] font-400 text-[18px] leading-[26px] text-center max-w-[377.67px] h-[104px] ">
                         Studies show that providing Earned Wage Access (EWA) leads to higher employee satisfaction, increased loyalty, and a stronger workforce
                     </p>
                 </div>
@@ -56,7 +56,7 @@ const SectionEight = () => {
                     <p className="font-graphik text-[#232E33] font-500 text-[24px] leading-[32px] text-center">
                         Configurable
                     </p>
-                    <p className="font-graphik text-[#525B60] font-400 text-[18px] leading-[26px] text-center w-[377.67px] h-[104px] ">
+                    <p className="font-graphik text-[#525B60] font-400 text-[18px] leading-[26px] text-center max-w-[377.67px] h-[104px] ">
                         Studies show that providing Earned Wage Access (EWA) leads to higher employee satisfaction, increased loyalty, and a stronger workforce
                     </p>
                 </div>

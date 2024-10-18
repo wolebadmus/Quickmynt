@@ -10,7 +10,7 @@ const Header = () => {
 
     return(
         <>
-        <div className={`flex justify-between lg:justify-evenly items-center w-full lg:max-w-[1140px]  h-[77px] px-4 lg:px-3 py-1 bg-[#FFF]`}>
+        <header className={`flex justify-between lg:justify-evenly items-center w-full lg:max-w-[1140px]  h-[77px] px-4 lg:px-3 py-1 bg-[#FFF]`}>
             <img src={logo} alt="Quick Mynt" className="w-[99.28px] h-[40.23px] lg:w-[149.28px] lg:h-[60.48px]" />
             <NavBar showMbMenu = {showMbMenu} />
             <a href="/" className="hidden bg-[#488559] text-white hover:text-[#488559] 
@@ -24,7 +24,7 @@ const Header = () => {
             
                 
             }
-        </div>
+        </header>
         <MbNavBar setShowMbMenu = {setShowMbMenu} showMbMenu = {showMbMenu} />
         
         </>
