@@ -1,0 +1,112 @@
+.accordion__container {
+    float: none;
+    padding: 0 0.875em;
+    /* border: solid 1px;     */
+    /* width: 100%; */
+}
+.accordion__title {
+    color: #000;
+    cursor: pointer;
+    padding: 1.125em 0 .2em;
+    text-align: left;
+    /* border: none; */
+    outline: none;
+    transition: 0.4s;
+    
+}
+
+.accordion__title::after {
+    content: url("/public/images/Arrow\ -\ Down\ 4.png");
+    float: right;
+}
+
+
+.down::after {
+    content: url("/public/images/Arrow\ -\ Down\ 4\ opp.png");
+}
+
+.plus::after {
+    content: url("/public/images/Add.png");
+    float: right;
+}
+
+.minus::after {
+    content: url("/public/images/Minus.png");
+    float: right;
+}
+
+.black_plus::after {
+    content: url("/public/images/black_add.png");
+    float: right;
+}
+
+.black_minus::after {
+    content: url("/public/images/black_minus.png");
+    float: right;
+}
+
+.accordion__ul {
+    clear: both;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    border-bottom: solid 1px #EFEFEF;
+    /* border: solid; */
+    max-height: 0;
+    transition: max-height .5s ease;
+}
+
+.accordion__li {
+    margin-bottom: 0.625em;
+    text-align: left;
+    word-break: keep-all;
+    overflow: hidden;
+    padding: 1em;
+    /* border: solid; */
+}
+
+
+
+.img {
+    display: none;
+}
+
+
+.display-block {
+    /* display: block !important; */
+    max-height:28em    
+    /* border-bottom: solid 1px #EFEFEF; */
+}
+
+/* .remove_border {
+    border-bottom: none;
+} */
+
+
+@media (max-width: 1024px) {
+    .plus::after, .minus::after, .black_plus::after, .black_minus::after {
+        transform: scale(.5);
+        /* border: solid; */
+        margin-top: -1em;
+        margin-left: 0em;
+        width: 2em;
+        height: 4em;
+        
+    }
+
+    .accordion__li > p {
+        margin: auto;
+        display: block;
+        /* border: solid; */
+        width: 24em;
+    }
+
+    .img {
+        height: auto;
+       width: 90%;
+        border-radius: 28px 53px 50px 50px;
+        margin: auto;
+        display: block;
+        margin-top: 2em;
+    }
+}
