@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import logo from "../assets/LOGO.png";
+import logo from "../assets/LOGO.svg";
 
 
 const mbNavBar = ({showMbMenu, setShowMbMenu}) => {
@@ -13,7 +13,7 @@ const mbNavBar = ({showMbMenu, setShowMbMenu}) => {
     return (
         <nav className={`lg:hidden flex flex-col justify-start gap-8  px-4 py-3 absolute z-50 bg-white top-0 w-full transition-all duration-300 ${showMbMenu ? "h-full max-h-[572.26px]" : "max-h-0 !py-0"}   overflow-hidden`}>
             <div className="flex justify-between">
-                <img src={logo} alt="Quick Mynt" className="w-[151px] h-[61px]" />
+                <img src={logo} alt="Quick Mynt" className="w-[151px] h-[61px] object-contain" />
                 <button className="bg-transparent lg:hidden p-0 border-none outline-none focus:border-none focus:outline-none" 
                 onClick={() => setShowMbMenu(false)}><FaTimes size={30} color="#434343"/></button>
             </div>

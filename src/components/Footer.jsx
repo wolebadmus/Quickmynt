@@ -1,6 +1,6 @@
 import { FaFacebook, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import FooterNavBar from "./FooterNavBar";
-import logo from "../assets/LOGO.png";
+import logo from "../assets/LOGO.svg";
 import { FaXTwitter } from "react-icons/fa6";
 
 
