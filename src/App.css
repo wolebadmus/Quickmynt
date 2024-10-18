@@ -12,5 +12,11 @@
   
 }
 
+.stats {
+  background: url("../src/assets/statistics.png");
+  background-size: cover;
+  
+}
+
 
 
