@@ -14,6 +14,7 @@ export default {
         'graphik': ['Graphik', 'sans-serif'], // Add your font here
         'osande': ['Osande', 'sans-serif'], // Add Graphik Trial font
       },
+
     },
   },
   plugins: [],
