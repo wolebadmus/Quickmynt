@@ -43,12 +43,12 @@ const SectionFour = () => {
                  />
             </div>
             <div className="flex flex-col gap-3 justify-center items-center lg:items-start lg:gap-0 ">
-                <p className="max-w-[11.6825em] w-full lg:max-w-[6em] text-[#161616] text-[1.875em] 
+                <p className="max-w-[10.9825em] w-full lg:max-w-[6em] text-[#161616] text-[1.875em] 
                 lg:text-[3.875em] font-osande font-[700] lg:font-[600] leading-[34.51px] lg:leading-[71.32px]">
                     <span className="text-[#488559] font-[700] font-osande">Endless Possibilities,</span> Unlock What's Yours.
                 </p>
 
-                <p className="max-w-[22.3125em] w-full h-[4.875em] lg:max-w-[19em] lg:h-[8.75em] text-[#161616] text-[1em] font-graphik
+                <p className="max-w-[21.0125em] w-full h-[4.875em] lg:max-w-[19em] lg:h-[8.75em] text-[#161616] text-[1em] font-graphik
                 lg:text-[1.5em] font-graphik font-[400] lg:font-[400] leading-[24px] lg:leading-[35px] text-justify lg:text-left">
                     No cost to employers or employees. Instantly access earnings and, in addition, enjoy health and financial wellness benefits.
                 </p>
