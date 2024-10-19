@@ -35,10 +35,10 @@ const SectionSix = () => {
             <div className="absolute w-full h-full bg-custom-gradient mix-blend-multiply "></div>
             <div className="flex flex-col justify-center gap-6 lg:gap-10 lg:w-full lg:max-w-[71.25em] text-white py-40">
                 <div className="z-40 flex flex-col justify-evenly gap-4 lg:gap-8 w-full">
-                    <p className="w-[12.45em] lg:w-[9.188em] font-osande font-[700] lg:font-[600] text-[1.875em] lg:text-[3.75em] leading-[40px] lg:leading-[65px] text-center lg:text-left ">
+                    <p className="max-w-[12.35em] lg:max-w-[9.188em] font-osande font-[700] lg:font-[600] text-[1.875em] lg:text-[3.75em] leading-[40px] lg:leading-[65px] text-center lg:text-left ">
                         It's Clear: A Platform Such as QuickMynt is What Employees Want
                     </p>
-                    <p className="w-[20.25em] lg:w-[28.188em] font-graphik font-[400] lg:font-[500] text-[1.125em] lg:text-[1.5em] leading-[26px] lg:leading-[35px] text-center lg:text-left">
+                    <p className="max-w-[20.25em] lg:max-w-[28.188em] font-graphik font-[400] lg:font-[500] text-[1.125em] lg:text-[1.5em] leading-[26px] lg:leading-[35px] text-center lg:text-left">
                         Studies show that providing Earned Wage Access (EWA) leads to higher employee satisfaction, increased loyalty, and a stronger workforce
                     </p>
                 </div>
