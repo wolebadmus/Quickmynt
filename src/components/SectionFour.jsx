@@ -7,26 +7,26 @@ const SectionFour = () => {
     const [isVisible, setIsVisible] = useState(false); // To track if the section is visible
     const imageRef = useRef(null); // Reference to the image
   
-    // Use IntersectionObserver to detect when the section enters the viewport
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const entry = entries[0];
-          setIsVisible(entry.isIntersecting); // Trigger animation if section is visible
-          if (entry.isIntersecting) {
-            observer.unobserve(imageRef.current); // Stop observing after animation triggers
-          }
-        },
-        {
-          threshold: 0.5, // 50% of the section must be visible to trigger the animation
-        }
-      );
-      observer.observe(imageRef.current);
-  
-      return () => {
-        if (imageRef.current) observer.unobserve(imageRef.current);
-      };
-    }, []);
+    // Scroll event listener to detect when the section enters the viewport
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!imageRef.current) return;
+      const sectionPosition = imageRef.current.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      // If the section is within the viewport, trigger the animation
+      if (sectionPosition < screenHeight - 50) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on mount to check visibility in case it's already in view
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Cleanup event listener
+    };
+  }, []);
 
 
 
