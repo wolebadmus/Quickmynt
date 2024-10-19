@@ -57,26 +57,26 @@ const SectionSeven = () => {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[1200px] lg:h-[2100px]" : "h-[1010px] lg:h-[1550px]"} bg-[#00204C] relative pt-14`}>
-      <div className="flex flex-col gap-5 items-center">
-            <div className="w-full max-w-[341px] lg:max-w-[1140px] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
+    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[131.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
+        <div className="flex flex-col gap-5 items-center">
+            <div className="w-full max-w-[21.31em] lg:max-w-[71.25em] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
                 <div className="flex w-full justify-start lg:justify-center items-center ">
-                    <p className="max-w-[293.23px] w-full lg:max-w-[555px] font-[800] font-osande text-[30px] lg:text-[60px] leading-[40px] lg:leading-[69.02px] ">
+                    <p className="max-w-[18.32em] w-full lg:max-w-[34.69em] font-[800] font-osande text-[1.88em] lg:text-[3.75em] leading-[40px] lg:leading-[69.02px]">
                     Wondering How QuickMynt Works? Let's Break It Down
                     </p>
                 </div>
-                <div className="flex flex-col gap-3 lg:gap-8 items-start lg:max-w-[548px]">
-                    <div className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000 ${showFull ? "h-[780px] lg:h-[1510px]" : "h-[600px] lg:h-[971px]"} overflow-hidden`}>
-                        <AccordionFAQ accordionData={accordionData} />
+                <div className="flex flex-col gap-3 lg:gap-8 items-start lg:max-w-[34.25em]">
+                    <div className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000 ${showFull ? "h-[48.75em] lg:h-[95.38em]" : "h-[37.5em] lg:h-[60.68em]"} overflow-hidden`}>
+                    <AccordionFAQ accordionData={accordionData} />
                     </div>
                     <button 
-                    className="flex p-0 text-[#46BDCE] gap-8 font-graphik font-[700] text-[16px] lg:text-[24px] 
+                    className="flex p-0 text-[#46BDCE] gap-8 font-graphik font-[700] text-[1em] lg:text-[1.5em] 
                             leading-[16.91px] lg:leading-[32px] justify-center items-center bg-transparent
                             border-none outline-none focus:border-none focus:outline-none
                             "
                     onClick={() => setShowFull(prev => !prev)}
                     >
-                        View more <FaArrowRight className="h-[21.72px] lg:h-[30px] w-[21.72px] lg:w-[30px]" />
+                    View {showFull ? "less" : "more"} <FaArrowRight className="h-[1.36em] lg:h-[1.48em] w-[1.36em] lg:w-[1.88em]" />
                     </button>
                 </div>
             </div>
@@ -84,7 +84,7 @@ const SectionSeven = () => {
 
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
-          className="w-full h-[100px] lg:h-[300px] lg:h-[400px]"
+          className="w-full h-[6.25em] lg:h-[18.75em] lg:h-[25em]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
