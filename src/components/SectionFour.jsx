@@ -1,10 +1,46 @@
+import { useEffect, useRef, useState } from "react";
 import phones from "../assets/phone.png";
 
 const SectionFour = () => {
+
+
+    const [isVisible, setIsVisible] = useState(false); // To track if the section is visible
+    const imageRef = useRef(null); // Reference to the image
+  
+    // Use IntersectionObserver to detect when the section enters the viewport
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          setIsVisible(entry.isIntersecting); // Trigger animation if section is visible
+          if (entry.isIntersecting) {
+            observer.unobserve(imageRef.current); // Stop observing after animation triggers
+          }
+        },
+        {
+          threshold: 0.5, // 50% of the section must be visible to trigger the animation
+        }
+      );
+      observer.observe(imageRef.current);
+  
+      return () => {
+        if (imageRef.current) observer.unobserve(imageRef.current);
+      };
+    }, []);
+
+
+
+
+
+
     return (
         <section className="max-w-[23.1875em] w-full lg:max-w-[71.25em] flex flex-col-reverse lg:flex-row justify-center gap-8 mt-20 lg:mt-0">
             <div className="flex justify-center">
-                <img src={phones} alt="phones" className="w-full h-full max-w-[24.659em] lg:max-w-[48.006em] max-h-[29.6125em] lg:max-h-[57.6519em] object-contain" />
+                <img ref={imageRef} src={phones} alt="phones" 
+                className={`transform transition-all duration-1000 ease-out w-full h-full max-w-[24.659em] lg:max-w-[48.006em] max-h-[29.6125em] lg:max-h-[57.6519em] object-contain ${
+                    isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
+                  }`}
+                 />
             </div>
             <div className="flex flex-col gap-3 justify-center items-center lg:items-start lg:gap-0 ">
                 <p className="max-w-[11.9825em] w-full lg:max-w-[6em] text-[#161616] text-[1.875em] 
