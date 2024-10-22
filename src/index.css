@@ -6,6 +6,10 @@
 
 
 
+:root {
+  line-height: 1;
+  font-size: 1em;
+}
 
 
 * {
@@ -15,8 +19,9 @@
 }
 
 .banner {
-  background: url("../src/assets/banner.svg");
+  background: url("../src/assets/banner.jpg");
   background-size: cover;
+  /* background-size: 1800px ; */
   background-repeat: no-repeat;
   
 }
