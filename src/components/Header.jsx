@@ -32,7 +32,7 @@ const Header = () => {
     return(
         <>
         <header className={`fixed z-50 w-full transition-all duration-500 ${ isScrolled ? 'bg-white shadow-2xl' : 'bg-transparent'}  lg:py-4 h-[4.81em] lg:h-[2.688em] flex justify-center`}>
-            <div className="flex justify-between lg:justify-evenly items-center w-full px-[.9em] lg:max-w-[71.25em] h-full 
+            <div className="flex justify-between lg:justify-evenly items-center w-full px-[.9em] lg:max-w-[90em] h-full 
              px-[0.25em] lg:px-[0.19em] py-[0.06em] ">
                 <img src={isScrolled ? logo : logo_white} alt="Quick Mynt" className="w-[6.2em] h-[2.51em] lg:w-[9.33em] lg:h-[3.78em] object-contain" />
                 <NavBar showMbMenu={showMbMenu} isScrolled = {isScrolled} />

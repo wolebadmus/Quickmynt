@@ -4,7 +4,7 @@ const SectionOne = () => {
     return (
         <section className={"banner flex flex-col w-full h-[42em]  lg:min-h-[100vh] pt-[2.8em] bg-right-bottom  lg:bg-top relative justify-center items-center gap-6"}>
             <div className="absolute w-full h-full bg-custom-gradient mix-blend-multiply -mt-[2.8em]"></div>
-            <div className="flex flex-col justify-center gap-6 lg:gap-5 lg:w-full lg:max-w-[71.25em] h-[18.075em] lg:h-[39.824em]">
+            <div className="flex flex-col justify-center gap-6 lg:gap-5 lg:w-full lg:max-w-[90em] h-[18.075em] lg:h-[39.824em]">
                 <div className="z-40 flex flex-col justify-center gap-4 lg:gap-6 max-w-[20.9375em] lg:max-w-[33.563em]  ">
                     <p className="text-base text-[#F3FEF6] text-[3.1419em] lg:text-[4.61em] font-osande font-[600] lg:font-[800] leading-[60.48px] lg:leading-[88px] text-center lg:text-left">
                         Turning Every Workday into Payday.
