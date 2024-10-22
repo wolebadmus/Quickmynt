@@ -15,7 +15,7 @@ const SectionThree = () => {
                     </p>
                 </div>
                 <div className="flex justify-end ">
-                    <img src={stats} alt="stats" className="max-w-[31.4375em] lg:max-w-[61.5625em] h-[27.75em] lg:h-[54.1875em] object-contain " />
+                    <img src={stats} alt="stats" className="max-w-[31.4375em] lg:max-w-[61.5625em] max-h-[27.75em] lg:max-h-[54.1875em] object-contain " />
                 </div>
             </div>
         </section>

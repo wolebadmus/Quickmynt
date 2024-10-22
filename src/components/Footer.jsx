@@ -12,7 +12,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="bg-[#FFFFFF] flex flex-col max-w-[20.69em] w-full lg:max-w-[71.25em] h-[56.75em] lg:h-[28em] gap-8 lg:gap-0 justify-center lg:justify-evenly">
+        <footer className="bg-[#FFFFFF] flex flex-col max-w-[20.69em] w-full lg:max-w-[71.25em] h-[48.75em] lg:h-[20em] gap-8 lg:gap-0 justify-center lg:justify-evenly">
             <div className="flex flex-col lg:flex-row justify-evenly items-start lg:items-center text-left gap-8 lg:gap-0">
                 <div className="flex flex-col gap-6 lg:w-full lg:max-w-[12.44em]">
                     <img src={logo} alt="Quick Mynt" className="w-[11.99em] h-[4.88em] lg:w-[12.44em] lg:h-[5.06em] object-contain" />

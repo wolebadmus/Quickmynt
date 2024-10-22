@@ -5,8 +5,8 @@ import asset3 from "../assets/seamless.svg";
 const SectionTwo = () => {
 
     const img_class = "w-[11.855em] h-[15.0987em] lg:w-[19.875em] lg:h-[25.3125em]";
-    const title_class = "max-w-[20.9375em] lg:max-w-[17.375em]  font-[700] text-[1.875em] lg:text-[2.5em]  text-[#434343] leading-[34.51px] lg:leading-[46.02px] text-center font-osande";
-    const sub_class = "max-w-[21.9375em] lg:max-w-[16.125em] font-[500] text-[1em] lg:text-[1.125em] text-[#9D9D9D] leading-[24px] lg:leading-[28px] text-center font-graphik";
+    const title_class = "max-w-[20.9375em] lg:max-w-[17.375em]  font-[600] text-[1.875em] lg:text-[2.5em]  text-[#434343] leading-[34.51px] lg:leading-[46.02px] text-center font-osande";
+    const sub_class = "max-w-[21.9375em] lg:max-w-[16.125em] font-[400] text-[1em] lg:text-[1.125em] text-[#9D9D9D] leading-[24px] lg:leading-[28px] text-center font-graphik";
 
     return (
         <section className="max-w-[23.1875em] w-full lg:max-w-[71.25em] py-16 flex flex-col justify-center items-center gap-16 ">
