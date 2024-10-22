@@ -13,8 +13,8 @@ const NavBar = ({isScrolled}) => {
         <nav className="hidden lg:flex w-full ">
 
             <ul className="flex justify-center gap-8 w-full">
-                {links.map((linkItem, idx) => <li key={idx}><a href={linkItem.url} className={` ${isScrolled ? 'text-[#434343]' : 'text-white'} 
-                font-graphik font-[400] text-[1.333em] lg:text-[1.125rem]`}>{linkItem.textUrl}</a></li>)}
+                {links.map((linkItem, idx) => <li key={idx}><a href={linkItem.url} className={`${isScrolled ? 'text-[#434343]' : 'text-white'} 
+                font-graphik font-[500] text-[1.333em]`}>{linkItem.textUrl}</a></li>)}
             </ul>
            
         </nav>
