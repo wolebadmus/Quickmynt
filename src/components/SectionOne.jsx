@@ -1,10 +1,13 @@
 const SectionOne = () => {
+
+   
+    
     return (
-        <section className={"banner flex flex-col w-full h-[42em] lg:h-[69.8125em] bg-right-bottom lg:bg-center relative justify-center items-center gap-6"}>
+        <section className={"banner flex flex-col w-full h-[42em] lg:h-[69.813em] bg-right-bottom lg:bg-center relative justify-center items-center gap-6"}>
             <div className="absolute w-full h-full bg-custom-gradient mix-blend-multiply "></div>
-            <div className="flex flex-col justify-center gap-6 lg:gap-3 lg:w-full lg:max-w-[71.25em]">
-                <div className="z-40 flex flex-col justify-evenly gap-4 lg:gap-0 h-[18.075em] lg:h-[33.5625em] max-w-[20.9375em] lg:max-w-[37.5em] ">
-                    <p className="text-[#F3FEF6] text-[3.1419em] lg:text-[5.61em] font-osande font-[600] lg:font-[800] leading-[60.48px] lg:leading-[108px] text-center lg:text-left">
+            <div className="flex flex-col justify-center gap-6 lg:gap-3 lg:w-full lg:max-w-[71em]">
+                <div className="z-40 flex flex-col justify-evenly gap-4 lg:gap-0 h-[18.075em] lg:h-[33.5625em] max-w-[20.9375em] lg:max-w-[30.5em] ">
+                    <p className="text-[#F3FEF6] text-[3.1419em] lg:text-[5em] font-osande font-[600] lg:font-[800] leading-[60.48px] lg:leading-[108px] text-center lg:text-left">
                         Turning Every Workday into Payday.
                     </p>
                     <p className="hidden lg:block text-[#FDFDFD] text-[1.7769em] font-osande font-[600] leading-[32.71px] text-left">
