@@ -3,11 +3,11 @@ const SectionOne = () => {
    //  h-[42em] lg:h-[69.813em]
     
     return (
-        <section className={"banner flex flex-col w-full h-[100vh] bg-right-bottom lg:bg-center relative justify-center items-center gap-6"}>
+        <section className={"banner flex flex-col w-full  bg-right-bottom lg:bg-center relative justify-center items-center gap-6"}>
             <div className="absolute w-full h-full bg-custom-gradient mix-blend-multiply "></div>
-            <div className="flex flex-col justify-center gap-6 lg:gap-3 lg:w-full lg:max-w-[71em] lg:pt-16">
+            <div className="flex flex-col justify-center gap-6 lg:gap-3 lg:w-full lg:max-w-[71.25em] lg:h-[100vh]">
                 <div className="z-40 flex flex-col justify-evenly gap-4 lg:gap-0  max-w-[20.9375em] lg:max-w-[24.5em] ">
-                    <p className="text-[#F3FEF6] text-[3.1419em] lg:text-[3.75em] font-osande font-[600] lg:font-[800] leading-[60.48px] lg:leading-[75px] text-center lg:text-left">
+                    <p className="text-[#F3FEF6] text-[3.1419em] lg:text-[3.75em] font-osande font-[600] lg:font-[800] leading-[60.48px] lg:leading-[78px] text-center lg:text-left">
                         Turning Every Workday into Payday.
                     </p>
                     <p className="hidden lg:block text-[#FDFDFD] text-[1.4em] font-osande font-[600] leading-[28.71px] text-left">
@@ -18,7 +18,7 @@ const SectionOne = () => {
                     </p>
                 </div>
                 <button className="z-40 text-[#F3FEF6] font-graphik font-[500] text-[1.0112em] lg:text-[1em] leading-[17.8px] 
-                lg:leading-[20.05px] bg-[#488559] w-[11.6669em] lg:w-[11em] h-[2.3887em] lg:h-[2.2em] hover:text-[#488559] hover:bg-[#FFF] 
+                lg:leading-[20.05px] bg-[#488559] w-[11.6669em] lg:w-[11em] h-[2.3887em] lg:h-[2.5em] hover:text-[#488559] hover:bg-[#FFF] 
                 hover:border hover:border-[#488559] rounded-full z-40 mx-auto lg:mx-0 ">
                     Request a Demo
                 </button>
