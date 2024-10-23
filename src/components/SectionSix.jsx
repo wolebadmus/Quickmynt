@@ -31,9 +31,9 @@ const SectionSix = () => {
     }, []);
 
     return (
-        <section className="stats flex flex-col w-full bg-right-bottom lg:bg-center relative justify-center items-center gap-6  mt-20">
+        <section className="stats flex flex-col w-full bg-right-bottom lg:bg-top relative justify-center items-center gap-6  mt-20 lg:h-[112.063em]">
             <div className="absolute w-full h-full bg-custom-gradient mix-blend-multiply "></div>
-            <div className="flex flex-col justify-center gap-6 lg:gap-10 lg:w-full lg:max-w-[71.25em] text-white py-40">
+            <div className="flex flex-col justify-center gap-6 lg:gap-10 lg:w-full lg:max-w-[90em] text-white py-40">
                 <div className="z-40 flex flex-col justify-evenly gap-4 lg:gap-8 w-full">
                     <p className="max-w-[12.35em] lg:max-w-[9.188em] font-osande font-[700] lg:font-[600] text-[1.875em] lg:text-[3.75em] leading-[40px] lg:leading-[65px] text-center lg:text-left ">
                         It's Clear: A Platform Such as QuickMynt is What Employees Want

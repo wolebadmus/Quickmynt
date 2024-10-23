@@ -57,17 +57,18 @@ const SectionSeven = () => {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[131.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
+    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[111.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
         <div className="flex flex-col gap-5 items-center">
-            <div className="w-full max-w-[21.31em] lg:max-w-[71.25em] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
-                <div className="flex w-full justify-start lg:justify-center items-center ">
-                    <p className="max-w-[18.32em] w-full lg:max-w-[34.69em] font-[800] font-osande text-[1.88em] lg:text-[3.75em] leading-[40px] lg:leading-[69.02px]">
+            <div className="w-full max-w-[21.31em] lg:max-w-[90em] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
+                <div className="flex w-full justify-start items-center ">
+                    <p className="max-w-[18.32em] w-full lg:max-w-[8.69em] font-[800] font-osande text-[1.88em] lg:text-[3.75em] leading-[40px] lg:leading-[69.02px]">
                     Wondering How QuickMynt Works? Let's Break It Down
                     </p>
                 </div>
-                <div className="flex flex-col gap-3 lg:gap-8 items-start lg:max-w-[34.25em]">
-                    <div className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000 ${showFull ? "h-[48.75em] lg:h-[95.38em]" : "h-[37.5em] lg:h-[60.68em]"} overflow-hidden`}>
-                    <AccordionFAQ accordionData={accordionData} />
+                <div className="flex flex-col gap-3 lg:gap-8 items-start  w-full">
+                    <div className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000
+                      ${showFull ? "h-[48.75em] lg:h-[80.38em]" : "h-[37.5em] lg:h-[61.68em]"} overflow-hidden`}>
+                      <AccordionFAQ accordionData={accordionData} />
                     </div>
                     <button 
                     className="flex p-0 text-[#46BDCE] gap-8 font-graphik font-[700] text-[1em] lg:text-[1.5em] 

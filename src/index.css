@@ -27,7 +27,7 @@
 }
 
 .stats {
-  background: url("../src/assets/statistics.png");
+  background: url("../src/assets/statistics.jpg");
   background-size: cover;
   
 }
@@ -44,6 +44,7 @@
 .rotating-rightphone {
 
   animation: rotateBackAndForthRight 5s infinite linear;
+  animation-delay: 0s;
 }
 
 @keyframes rotateBackAndForthLeft {
@@ -58,6 +59,7 @@
 .rotating-leftphone {
 
   animation: rotateBackAndForthLeft 5s infinite linear;
+  animation-delay: 0s;
 }
 
 
