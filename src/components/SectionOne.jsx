@@ -12,7 +12,7 @@ const SectionOne = () => {
                     <p className="hidden lg:block text-[#FDFDFD] text-[1.5769em] font-osande font-[600] leading-[32.71px] text-left">
                         Every Day Earned, Every Day Accessible.
                     </p>
-                    <p className="text-[#FDFDFD]  max-w-[20.9375em] lg:max-w-[20.563em] text-[1em] lg:text-[1.5em] font-osande font-[500] lg:font-[400] leading-[24px] lg:leading-[35px] text-center lg:text-left">
+                    <p className="text-[#FDFDFD]  max-w-[20.9375em] lg:max-w-[20.563em] text-[1em] lg:text-[1.5em] font-osande font-[500] lg:font-[300] leading-[24px] lg:leading-[35px] text-center lg:text-left">
                         QuickMynt delivers a cutting-edge earned wage access platform, giving employees the freedom to access their pay on their terms, with no disruptions to payroll.
                     </p>
                 </div>

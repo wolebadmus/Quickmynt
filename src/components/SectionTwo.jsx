@@ -34,7 +34,7 @@ const SectionTwo = () => {
                 <div className="flex flex-col items-center gap-5">
                     <img src={asset3} alt="" className={img_class} />
                     <div className="flex flex-col items-center gap-5">
-                        <p className={title_class + " lg:max-w-[10.25em]"}>Seamless Payroll Deduction</p>
+                        <p className={title_class + " lg:max-w-[11.55em]"}>Seamless Payroll Deduction</p>
                         <p className={sub_class}>No Interest, No Hidden Fees - helping you build a healthier financial future, on your terms</p>
                     </div>
                 </div>

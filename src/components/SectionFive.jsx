@@ -16,24 +16,27 @@ const SectionFive = () => {
   ];
 
   return (
-    <section className="flex justify-end w-full mt-20">
-      <div className="flex flex-col lg:flex-row max-w-[23.19em] w-full lg:max-w-[95.31em] h-[5.28em] lg:h-[7.5em] justify-center items-center gap-1 lg:gap-0">
-        <div className="flex lg:min-w-[18.88em]">
+    <section className="flex justify-end lg:justify-center w-full mt-20">
+      <div className="flex flex-col lg:flex-row max-w-[23.19em] w-full lg:max-w-[90em] h-[5.28em] lg:h-[7.5em] 
+                      justify-center  items-center gap-1 lg:gap-0">
+        <div className="flex lg:min-w-[18.88em] z-200">
           <p className="font-graphik font-500 text-[1em] lg:text-[1.23em] leading-[17.6px] lg:leading-[21.66px] text-center">
             WE ARE TRUSTED BY
           </p>
         </div>
-        <div className="flex w-full">
-          <Marquee gradient={false} speed={50} className="w-full h-[6.25em] lg:h-[7.5em]">
-            {imgs.map((imgItem, idx) => (
-              <img
-                src={imgItem.imgsrc}
-                alt=""
-                key={idx}
-                className={`object-contain ${idx < imgs.length - 1 ? "mr-[1.63em] lg:mr-[5.5em]" : "mr-[0.5em] lg:mr-0"} ${imgItem.className}`}
-              />
-            ))}
-          </Marquee>
+        <div className="flex w-full lg:h-full ">
+          <div className="lg:absolute ">
+            <Marquee gradient={false} speed={50} className="w-full h-[6.25em] lg:h-[7.5em]">
+              {imgs.map((imgItem, idx) => (
+                <img
+                  src={imgItem.imgsrc}
+                  alt=""
+                  key={idx}
+                  className={`object-contain ${idx < imgs.length - 1 ? "mr-[1.63em] lg:mr-[7.5em]" : "mr-[0.5em] lg:mr-0"} ${imgItem.className}`}
+                />
+              ))}
+            </Marquee>
+          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import phones from "../assets/phone.png";
+import leftphone from "../assets/leftphone.svg";
+import rightphone from "../assets/rightphone.svg";
 
 const SectionFour = () => {
 
@@ -29,20 +30,23 @@ const SectionFour = () => {
   }, []);
 
 
-
+// ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`
 
 
 
     return (
-        <section className="max-w-[23.1875em] w-full lg:max-w-[71.25em] flex flex-col-reverse lg:flex-row justify-center gap-8 mt-20 lg:mt-0">
+        <section className="max-w-[23.1875em] w-full lg:max-w-[90em] flex flex-col-reverse lg:flex-row justify-center lg:justify-around gap-8 lg:gap-0 mt-20 lg:mt-0">
             <div className="flex justify-center">
-                <img ref={imageRef} src={phones} alt="phones" 
-                className={`transform transition-all duration-1000 ease-out w-full h-full max-w-[24.659em] lg:max-w-[48.006em] max-h-[29.6125em] lg:max-h-[57.6519em] object-contain ${
-                    isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-                  }`}
+                <img ref={imageRef} src={leftphone} alt="phones" 
+                className={`transform transition-all duration-1000 ease-out w-full h-full max-w-[24.659em] lg:max-w-[21.148em] max-h-[29.6125em] rotating-leftphone
+                  lg:max-h-[41.426em] object-contain `}
+                 />
+                <img ref={imageRef} src={rightphone} alt="phones" 
+                className={`transform transition-all duration-1000 ease-out w-full h-full max-w-[24.659em] lg:max-w-[21.148em] max-h-[29.6125em] rotating-rightphone 
+                  lg:max-h-[41.426em] object-contain -ml-[11em]`}
                  />
             </div>
-            <div className="flex flex-col gap-3 justify-center items-center lg:items-start lg:gap-0 ">
+            <div className="flex flex-col gap-3  justify-center items-center lg:items-start lg:gap-0 ">
                 <p className="max-w-[10.9825em] w-full lg:max-w-[6em] text-[#161616] text-[1.875em] 
                 lg:text-[3.875em] font-osande font-[700] lg:font-[600] leading-[34.51px] lg:leading-[71.32px]">
                     <span className="text-[#488559] font-[700] font-osande">Endless Possibilities,</span> Unlock What's Yours.
