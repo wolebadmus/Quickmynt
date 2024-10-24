@@ -6,7 +6,7 @@ const SectionThree = () => {
     return (
         <section className="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full lg:max-w-[90em] w-full lg:h-[31.188em] gap-5 lg:gap-0 mt-10">
             <img src={about_three} alt="about_us_one" className=" h-[21.242em] lg:h-[22.403em] w-[16.64em] lg:w-[32.294em]" />
-            <div className="flex flex-col gap-6 justify-center items-start  gap-3 lg:gap-3">
+            <div className="flex flex-col gap-6 justify-center items-start  gap-3 lg:gap-3 px-2 lg:px-0">
                 <p className="text-[#434343] font-osande font-[600] lg:font-[600] text-[2.5em] lg:text-[3.55em] max-w-[9em] lg:max-w-[12.365em]
                 leading-[46.02px] lg:leading-[69.02px]">
                     Our Commitment

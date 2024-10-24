@@ -11,7 +11,7 @@ const SectionOne = () => {
 
     return(
         <section className="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between  w-full lg:max-w-[90em] mt-10 mb-4">
-            <div className="bg-[#F3FEF6] shadow-md  w-[22.438em] lg:w-[37.781em] h-[30.574em] lg:h-[34.762em] rounded-2xl mx-auto">
+            <div className="bg-[#F3FEF6] shadow-md  w-[20.438em] lg:w-[37.781em] h-[30.574em] lg:h-[34.762em] rounded-2xl mx-auto">
                 <img src= {contact_one} alt="" className="w-[23.438em] lg:w-[37.781em] h-[10.375em] lg:h-[17.375em] " />
                 <div className="w-full flex flex-col h-[19em] lg:h-[16em] justify-evenly items-center">
                     <p className="text-[2.25em] lg:text-[2.05em] font-osande font-[500] lg:font-[600] leading-[41.41px] lg:leading-[41.41px] text-center text-[#488559]">
@@ -27,7 +27,7 @@ const SectionOne = () => {
                     </button>
                 </div>
             </div>
-            <div className="bg-[#F3FEF6] shadow-md  w-[22.438em] lg:w-[37.781em] h-[30.574em] lg:h-[34.762em] rounded-2xl mx-auto">
+            <div className="bg-[#F3FEF6] shadow-md  w-[20.438em] lg:w-[37.781em] h-[30.574em] lg:h-[34.762em] rounded-2xl mx-auto">
                 <img src= {contact_two} alt="" className="w-[23.438em] lg:w-[37.781em] h-[10.375em] lg:h-[17.375em] " />
                 <div className="w-full flex flex-col h-[19em] lg:h-[16em] justify-evenly items-center">
                     <p className="text-[2.25em] lg:text-[2.05em] font-osande font-[500] lg:font-[600] leading-[41.41px] lg:leading-[41.41px] text-center text-[#488559]">

@@ -4,9 +4,9 @@ import about_one from "../../assets/about_one.svg";
 const SectionOne = () => {
 
     return (
-        <section className="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full lg:max-w-[90em] w-full lg:h-[31.188em] gap-5 lg:gap-0 mt-10">
+        <section className="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full lg:max-w-[90em] lg:h-[31.188em] gap-5 lg:gap-0 mt-10">
             <img src={about_one} alt="about_us_one" className=" h-[14.694em] lg:h-[22.125em] w-[14.583em] lg:w-[21.958em] mb-5 lg:mb-0" />
-            <div className="flex flex-col gap-6 justify-center items-center gap-3 lg:gap-3">
+            <div className="flex flex-col gap-6 justify-center items-center gap-3 lg:gap-3 px-2 lg:px-0">
                 <p className="text-[#434343] font-osande font-[600] lg:font-[600] text-[2.5em] lg:text-[3.55em] max-w-[9em] lg:max-w-[12.965em]
                 leading-[46.02px] lg:leading-[69.02px]">
                     Why We're <span className="text-[#488559]">Committed</span> to SMBs
