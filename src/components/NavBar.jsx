@@ -61,10 +61,13 @@ const NavBar = ({isScrolled}) => {
             <ul className="flex justify-center gap-8 w-full">
                 {  location.pathname === "/" ?
                     links.map((linkItem, idx) => <li key={idx}>
-                        <NavLink to={linkItem.url}  onClick={(event) => handleScrollToSection(event, linkItem)} className={`${(isScrolled) ? 'text-[#434343]' : 'text-white'} 
-                    font-graphik font-[500] text-[1.333em]`}>{linkItem.textUrl}
-                    </NavLink> 
+                        {linkItem.url.startsWith("#") ? <NavLink to={linkItem.url}  onClick={(event) => handleScrollToSection(event, linkItem)} className={`${(isScrolled) ? 'text-[#434343]' : 'text-white'} 
+                    font-graphik font-[500] text-[1.333em]`}>{linkItem.textUrl}</NavLink> 
+                        :
+                    <NavLink to={linkItem.url}  className={`${ 'text-[#434343]'} 
+                    font-graphik font-[500] text-[1.333em]`}>{linkItem.textUrl}</NavLink>}
                     </li>)
+                        
                     :
                     links.map((linkItem, idx) => <li key={idx}>{linkItem.url.startsWith("#") ? <a href={"/" + linkItem.url} className={`${ 'text-[#434343]'} 
                     font-graphik font-[500] text-[1.333em]`}>{linkItem.textUrl}</a>
