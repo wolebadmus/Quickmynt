@@ -1,14 +1,16 @@
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 
 
 const FooterNavBar = () => {
     const links = [
-        {textUrl: "About Us", url: "/aboutus"},
+        {textUrl: "About Us", url: "/about-us"},
         {textUrl: "FAQs", url: "#faq"},
-        {textUrl: "Contact Us", url: "/contactus"},
+        {textUrl: "Contact Us", url: "/contact-us"},
     ];
+
+    const location = useLocation();
 
 
   const handleScrollToSection = (event, linkItem) => {

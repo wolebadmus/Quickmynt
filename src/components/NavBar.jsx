@@ -6,10 +6,12 @@ import { NavLink, useLocation } from "react-router-dom";
 const NavBar = ({isScrolled}) => {
 
     const links = [
-        {textUrl: "About Us", url: "/aboutus"},
+        {textUrl: "About Us", url: "/about-us"},
         {textUrl: "FAQs", url: "#faq"},
-        {textUrl: "Contact Us", url: "/contactus"},
+        {textUrl: "Contact Us", url: "/contact-us"},
     ];
+
+    const location = useLocation();
 
 
   const handleScrollToSection = (event, linkItem) => {

@@ -1,16 +1,18 @@
 import { FaTimes } from "react-icons/fa";
 import logo from "../assets/LOGO.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 
 const mbNavBar = ({showMbMenu, setShowMbMenu}) => {
 
     const links = [
-        {textUrl: "About Us", url: "/aboutus"},
+        {textUrl: "About Us", url: "/about-us"},
         {textUrl: "FAQs", url: "#faq"},
-        {textUrl: "Contact Us", url: "/contactus"},
+        {textUrl: "Contact Us", url: "/contact-us"},
     ];
+
+    const location = useLocation();
 
 
   const handleScrollToSection = (event, linkItem) => {
