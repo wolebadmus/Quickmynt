@@ -25,6 +25,11 @@
   background-repeat: no-repeat;
   
 }
+.stats {
+  background: url("../src/assets/statistics.svg");
+  background-size: cover;
+  
+}
 
 @media (max-width: 720px) {
   .banner {
@@ -34,17 +39,18 @@
     background-repeat: no-repeat;
     
   }
+  .stats {
+    background: url("../src/assets/statisticsMb.svg");
+    background-size: cover;
+    
+  }
   
 }
 
 
 
 
-.stats {
-  background: url("../src/assets/statistics.jpg");
-  background-size: cover;
-  
-}
+
 
 @keyframes rotateBackAndForthRight {
   0%, 100% {
