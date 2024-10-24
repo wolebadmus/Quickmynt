@@ -2,7 +2,7 @@ const SectionOne = () => {
 
     // lg:h-[69.8125em]
     return (
-        <section className={"banner flex flex-col w-full h-[36em]  lg:min-h-[100vh] pt-[2.8em] !bg-right  lg:bg-top relative justify-center items-center gap-6"}>
+        <section className={"banner flex flex-col w-full h-[36em]  lg:min-h-[100vh] pt-[2.8em] !bg-right  lg:!bg-top relative justify-center items-center gap-6"}>
             <div className="absolute w-full h-full bg-custom-gradient mix-blend-multiply -mt-[2.8em]"></div>
             <div className="flex flex-col justify-center gap-6 lg:gap-5 lg:w-full lg:max-w-[90em] h-[22.249em] lg:h-[39.824em]">
                 <div className="z-40 flex flex-col justify-center gap-4 lg:gap-6 max-w-[20.9375em] lg:max-w-[33.563em]  ">
