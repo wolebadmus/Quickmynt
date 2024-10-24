@@ -65,8 +65,12 @@ const FooterNavBar = () => {
 
                 {  location.pathname === "/" ?
                     links.map((linkItem, idx) => <li key={idx}>
-                        <NavLink to={linkItem.url}  onClick={(event) => handleScrollToSection(event, linkItem)} className="text-[#434343] font-graphik font-[500] text-[16px] lg:text-[21.33px] leading-[17.6px] lg:leading-[23.46px]">{linkItem.textUrl}
+                        { linkItem.url.startsWith("#") ?
+                        <NavLink to={linkItem.url}  onClick={(event) => handleScrollToSection(event, linkItem)} className="text-[#434343] font-graphik font-[500]
+                         text-[16px] lg:text-[21.33px] leading-[17.6px] lg:leading-[23.46px]">{linkItem.textUrl}
                     </NavLink> 
+                    :
+                    <NavLink to={linkItem.url}  className="text-[#434343] font-graphik font-[500] text-[16px] lg:text-[21.33px] leading-[17.6px] lg:leading-[23.46px]">{linkItem.textUrl}</NavLink>}
                     </li>)
                     :
                     links.map((linkItem, idx) => <li key={idx}>{linkItem.url.startsWith("#") ? <a href={"/" + linkItem.url} className="text-[#434343] font-graphik font-[500] text-[16px] lg:text-[21.33px] leading-[17.6px] lg:leading-[23.46px]">{linkItem.textUrl}</a>

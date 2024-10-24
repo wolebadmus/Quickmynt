@@ -65,8 +65,11 @@ const mbNavBar = ({showMbMenu, setShowMbMenu}) => {
                 {/* {links.map((linkItem, idx) => <li key={idx}><NavLink to={linkItem.url} onClick={() => setShowMbMenu(false)} className="text-[#6F6F6F] font-graphik font-[400] text-[1.188em] leading-[24px]">{linkItem.textUrl}</NavLink></li>)} */}
                 {  location.pathname === "/" ?
                     links.map((linkItem, idx) => <li key={idx}>
-                        <NavLink to={linkItem.url}  onClick={(event) => {setShowMbMenu(false); handleScrollToSection(event, linkItem);}} className="text-[#6F6F6F] font-graphik font-[400] text-[1.188em] leading-[24px]">{linkItem.textUrl}
+                       { linkItem.url.startsWith("#") ? <NavLink to={linkItem.url}  onClick={(event) => {setShowMbMenu(false); handleScrollToSection(event, linkItem);}} className="text-[#6F6F6F] font-graphik font-[400] text-[1.188em] leading-[24px]">{linkItem.textUrl}
                     </NavLink> 
+                    :
+                    <NavLink to={linkItem.url} onClick={() => setShowMbMenu(false)}  className="text-[#6F6F6F] font-graphik font-[400] text-[1.188em] leading-[24px]">
+                        {linkItem.textUrl}</NavLink>}
                     </li>)
                     :
                     links.map((linkItem, idx) => <li key={idx}>{linkItem.url.startsWith("#") ? <a href={"/" + linkItem.url} className="text-[#6F6F6F] font-graphik font-[400] text-[1.188em] leading-[24px]">{linkItem.textUrl}</a>
