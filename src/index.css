@@ -26,6 +26,20 @@
   
 }
 
+@media (max-width: 720px) {
+  .banner {
+    background: url("../src/assets/banner1.png");
+    background-size: cover;
+    /* background-size: 1800px ; */
+    background-repeat: no-repeat;
+    
+  }
+  
+}
+
+
+
+
 .stats {
   background: url("../src/assets/statistics.jpg");
   background-size: cover;
