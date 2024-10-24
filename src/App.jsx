@@ -17,8 +17,8 @@ function App() {
           <Header />
           <Routes>
               <Route path="/" Component={LandingPage} />
-              <Route  path="/about-us" Component={AboutUsPage} />
-              <Route  path="/contact-us" Component={ContactUsPage} />
+              <Route  path="/aboutus" Component={AboutUsPage} />
+              <Route  path="/contactus" Component={ContactUsPage} />
           </Routes>
           <Footer />
           <DemoForm />

@@ -7,9 +7,9 @@ import { useEffect } from "react";
 const mbNavBar = ({showMbMenu, setShowMbMenu}) => {
 
     const links = [
-        {textUrl: "About Us", url: "/about-us"},
+        {textUrl: "About Us", url: "/aboutus"},
         {textUrl: "FAQs", url: "#faq"},
-        {textUrl: "Contact Us", url: "/contact-us"},
+        {textUrl: "Contact Us", url: "/contactus"},
     ];
 
 

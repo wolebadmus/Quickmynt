@@ -6,9 +6,9 @@ import { NavLink, useLocation } from "react-router-dom";
 const NavBar = ({isScrolled}) => {
 
     const links = [
-        {textUrl: "About Us", url: "/about-us"},
+        {textUrl: "About Us", url: "/aboutus"},
         {textUrl: "FAQs", url: "#faq"},
-        {textUrl: "Contact Us", url: "/contact-us"},
+        {textUrl: "Contact Us", url: "/contactus"},
     ];
 
 
