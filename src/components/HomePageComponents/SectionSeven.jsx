@@ -57,7 +57,7 @@ const SectionSeven = () => {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <section className={`w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[111.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
+    <section id="faq" className={`w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[111.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
         <div className="flex flex-col gap-5 items-center">
             <div className="w-full max-w-[21.31em] lg:max-w-[90em] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
                 <div className="flex w-full justify-start items-center ">
@@ -77,7 +77,7 @@ const SectionSeven = () => {
                             "
                     onClick={() => setShowFull(prev => !prev)}
                     >
-                    View {showFull ? "less" : "more"} <FaArrowRight className="h-[1.36em] lg:h-[1.48em] w-[1.36em] lg:w-[1.88em]" />
+                    View {showFull ? "less" : "more"} <FaArrowRight className="h-[1.36em] lg:h-[1.28em] w-[1.36em] lg:w-[1.9em]" />
                     </button>
                 </div>
             </div>

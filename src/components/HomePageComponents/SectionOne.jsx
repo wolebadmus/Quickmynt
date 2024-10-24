@@ -1,4 +1,8 @@
+import useModalStore from "../../store/modalStore";
+
 const SectionOne = () => {
+
+    const {setIsOpen} = useModalStore();
 
     // lg:h-[69.8125em]
     return (
@@ -16,7 +20,7 @@ const SectionOne = () => {
                         QuickMynt delivers a cutting-edge earned wage access platform, giving employees the freedom to access their pay on their terms, with no disruptions to payroll.
                     </p>
                 </div>
-                <button className="z-40 text-[#F3FEF6] font-graphik font-[500] text-[1.0112em] lg:text-[1.094em] leading-[17.8px] lg:leading-[23.05px]
+                <button onClick={() => setIsOpen(true)} className="z-40 text-[#F3FEF6] font-graphik font-[500] text-[1.0112em] lg:text-[1.094em] leading-[17.8px] lg:leading-[23.05px]
                  bg-[#488559] w-[11.6669em] lg:w-[10.5981em] h-[2.3887em] lg:h-[3.0744em] hover:text-[#488559]
                   hover:bg-[#FFF] hover:border hover:border-[#488559] rounded-full z-40 mx-auto lg:mx-0">
                     Request a Demo

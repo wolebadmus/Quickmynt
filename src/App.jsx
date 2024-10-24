@@ -5,11 +5,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage';
+import DemoForm from './components/DemoForm';
 
 function App() {
 
   return (
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center scroll-smooth '>
           <Header />
           <Routes>
               <Route path="/" Component={LandingPage} />
@@ -17,6 +18,7 @@ function App() {
               <Route exact path="/contact-us" Component={ContactUsPage} />
           </Routes>
           <Footer />
+          <DemoForm />
         </div>
   );
 };

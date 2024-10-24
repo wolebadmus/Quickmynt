@@ -6,11 +6,13 @@ import square from "../../assets/square.svg";
 import compliance from "../../assets/compliance.png";
 import security from "../../assets/security.png";
 import configurable from "../../assets/security.png";
+import useModalStore from "../../store/modalStore";
 
 
 
 const SectionEight = () => {
 
+    const {setIsOpen} = useModalStore();
 
 
     const icons = [
@@ -68,7 +70,8 @@ const SectionEight = () => {
             </div>
         </div>
     
-        <button className="font-graphik text-[#F3FEF6] font-[500] text-[1.16em] lg:text-[1.4em] leading-[20.51px] lg:leading-[24.54px] bg-[#232E33] w-[9.78em] lg:w-[10.62em] h-[2.33em] lg:h-[2.75em] rounded-full p-0">
+        <button onClick={() => setIsOpen(true)} className="z-40 font-graphik text-[#F3FEF6] font-[500] text-[1.16em] lg:text-[1.4em] 
+        leading-[20.51px] lg:leading-[24.54px] bg-[#232E33] w-[9.78em] lg:w-[10.62em] h-[2.33em] lg:h-[2.75em] rounded-full p-0">
             Request a Demo
         </button>
     </section>
