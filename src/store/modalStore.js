@@ -3,9 +3,9 @@ import { create } from "zustand";
 
 const useModalStore = create((set) => ({
 
-    isOpen:true,
+    isOpen:false,
     setIsOpen: (isOpen) => set({ isOpen })
 
 }));
 
-export default useModalStore;
+export default useModalStore
