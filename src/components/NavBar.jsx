@@ -7,7 +7,7 @@ const NavBar = ({isScrolled}) => {
     const links = [
         {textUrl: "About Us", url: "/about-us"},
         {textUrl: "FAQs", url: "/"},
-        {textUrl: "Contact Us", url: "/"},
+        {textUrl: "Contact Us", url: "/contact-us"},
     ];
 
 
