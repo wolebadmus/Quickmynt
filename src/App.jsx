@@ -6,11 +6,14 @@ import Footer from './components/Footer';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage';
 import DemoForm from './components/DemoForm';
+import useModalStore from './store/modalStore';
 
 function App() {
 
+  const {isOpen} = useModalStore();
+
   return (
-        <div className='flex flex-col items-center scroll-smooth '>
+        <div className={`flex flex-col items-center scroll-smooth ${isOpen ? 'overflow-y-hidden' : 'overflow-y-auto' }`}>
           <Header />
           <Routes>
               <Route path="/" Component={LandingPage} />
