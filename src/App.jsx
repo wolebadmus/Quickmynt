@@ -17,8 +17,8 @@ function App() {
           <Header />
           <Routes>
               <Route path="/" Component={LandingPage} />
-              <Route exact path="/about-us" Component={AboutUsPage} />
-              <Route exact path="/contact-us" Component={ContactUsPage} />
+              <Route  path="/about-us" Component={AboutUsPage} />
+              <Route  path="/contact-us" Component={ContactUsPage} />
           </Routes>
           <Footer />
           <DemoForm />
