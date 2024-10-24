@@ -1,11 +1,11 @@
-import adp from "../assets/adp.svg";
-import gusto from "../assets/gusto.svg";
-import paychex from "../assets/paychex.svg";
-import quickbook from "../assets/quickbook.svg";
-import square from "../assets/square.svg";
-import compliance from "../assets/compliance.png";
-import security from "../assets/security.png";
-import configurable from "../assets/security.png";
+import adp from "../../assets/adp.svg";
+import gusto from "../../assets/gusto.svg";
+import paychex from "../../assets/paychex.svg";
+import quickbook from "../../assets/quickbook.svg";
+import square from "../../assets/square.svg";
+import compliance from "../../assets/compliance.png";
+import security from "../../assets/security.png";
+import configurable from "../../assets/security.png";
 
 
 

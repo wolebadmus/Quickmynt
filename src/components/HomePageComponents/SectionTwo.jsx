@@ -1,6 +1,7 @@
-import asset1 from "../assets/track.svg";
-import asset2 from "../assets/request.svg";
-import asset3 from "../assets/seamless.svg";
+import asset1 from "../../assets/track.svg";
+import asset2 from "../../assets/request.svg";
+import asset3 from "../../assets/seamless.svg";
+
 
 const SectionTwo = () => {
 

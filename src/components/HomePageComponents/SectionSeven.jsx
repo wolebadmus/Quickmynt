@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import AccordionFAQ from "./Accordion/AccordionFAQ";
+import AccordionFAQ from "../Accordion/AccordionFAQ";
 import { useState } from "react";
 
 const SectionSeven = () => {

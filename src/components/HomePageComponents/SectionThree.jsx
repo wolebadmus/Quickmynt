@@ -1,4 +1,4 @@
-import stats from "../assets/stats.svg"
+import stats from "../../assets/stats.svg"
 
 const SectionThree = () => {
 

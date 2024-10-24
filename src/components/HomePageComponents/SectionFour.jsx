@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import leftphone from "../assets/leftphone.svg";
-import rightphone from "../assets/rightphone.svg";
+import leftphone from "../../assets/leftphone.svg";
+import rightphone from "../../assets/rightphone.svg";
 
 const SectionFour = () => {
 
