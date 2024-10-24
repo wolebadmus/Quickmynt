@@ -51,6 +51,11 @@ const FooterNavBar = () => {
   useEffect(() => {
     if (location.hash) {
       handleScrollToSection2(location.hash);
+    } else {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // You can set this to "auto" for immediate scroll
+          });
     }
   }, [location]);
 
