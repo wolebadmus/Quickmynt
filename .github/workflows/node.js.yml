@@ -34,5 +34,5 @@ jobs:
       run: npm run build
 
     - name: Copy File
-      run: sudo cp -r /var/www/Quickmynt/staging/_work/Quickmynt/Quickmynt/build /var/www/Quickmynt/production
+      run: sudo cp -r /var/www/Quickmynt/staging/_work/Quickmynt/Quickmynt/dist /var/www/Quickmynt/production
     
