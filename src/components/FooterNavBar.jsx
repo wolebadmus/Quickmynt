@@ -59,7 +59,7 @@ const FooterNavBar = () => {
     }
   }, [location]);
 
-  console.log(location.pathname);
+  // console.log(location.pathname);
 
     return (
         <nav className="flex w-full flex-col justify-center lg:items-center">
