@@ -132,10 +132,10 @@ const DemoForm = () => {
 
         return (
             <div className="fixed z-[1000000] flex justify-center items-center h-full w-full bg-[rgba(0,0,0,.1)]">
-                <div className="shadow-lg rounded-lg h-[20em] w-[80vw] my-auto bg-white flex flex-col justify-center items-center gap-4">
+                <div className="shadow-lg rounded-lg h-[20em] w-[350px] my-auto bg-white flex flex-col justify-center items-center gap-4">
                     {success && <IoIosCheckmarkCircle color="#488559" className= {`h-4 w-4 transition-all duration-500 ${success && "h-[120px] w-[120px]"} `} />}
                     {err && <FaCircleXmark color="#FF0000" className= {`h-4 w-4 transition-all duration-500 ${err && "h-[120px] w-[120px]"} `} />}
-                    <p className={`font-osande font-[800] lg:font-[900] text-[1em] lg:text-[3em] ${success && "text-[#488559]"} ${err && "text-[#FF0000]"} text-center`}>{err && error} 
+                    <p className={`font-osande font-[800] lg:font-[900] text-[1em] lg:text-[1.5em] ${success && "text-[#488559]"} ${err && "text-[#FF0000]"} text-center`}>{err && error} 
                         {success && "Email Sent!"}</p>
                </div>
             </div>
