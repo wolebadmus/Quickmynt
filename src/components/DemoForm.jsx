@@ -47,10 +47,12 @@ const DemoForm = () => {
         const { fname, lname, compEmail, compName, pnum, employees_num } = formData;
         if (!fname || !lname || !compEmail || !compName || !pnum || !employees_num ) {
           setError("Please fill required fields.");
+          setErr(true);
           return false;
         }
         if (!captchaValue) {
           setError("Please verify the reCAPTCHA.");
+          setErr(true);
           return false;
         }
         setError("");
@@ -93,11 +95,12 @@ const DemoForm = () => {
                 setLoading(false);
                 handleClearForm();
             } else {
+                setError(result.message);
                 setErr(true);
                 setLoading(false);
             }
         } catch (error) {
-            console.error("Error sending email:", error);
+                setError("Error sending email:" + error);
                 setErr(true);
                 setLoading(false);
             }
@@ -132,7 +135,7 @@ const DemoForm = () => {
                 <div className="shadow-lg rounded-lg h-[20em] w-[80vw] my-auto bg-white flex flex-col justify-center items-center gap-4">
                     {success && <IoIosCheckmarkCircle color="#488559" className= {`h-4 w-4 transition-all duration-500 ${success && "h-[120px] w-[120px]"} `} />}
                     {err && <FaCircleXmark color="#FF0000" className= {`h-4 w-4 transition-all duration-500 ${err && "h-[120px] w-[120px]"} `} />}
-                    <p className={`font-osande font-[800] lg:font-[900] text-[1em] lg:text-[3em] ${success && "text-[#488559]"} ${err && "text-[#FF0000]"} text-center`}>{err && "Email not sent! Try again"} 
+                    <p className={`font-osande font-[800] lg:font-[900] text-[1em] lg:text-[3em] ${success && "text-[#488559]"} ${err && "text-[#FF0000]"} text-center`}>{err && error} 
                         {success && "Email Sent!"}</p>
                </div>
             </div>
@@ -169,7 +172,6 @@ const DemoForm = () => {
                 </div>
                 <div className="flex w-full px-[1em] lg:max-w-[76.188em] lg:items-center justify-between">
                     <form action="" method="post" className="w-full max-w-[20.625em] flex flex-col gap-8">
-                        {error && <p style={{ color: "red" }}>{error}</p>}
                         <div className=" w-full flex flex-col gap-3">
                             <label htmlFor="fname" className="flex font-graphik font-[500] text-[1.125em] lg:text-[1.25em] gap-1">First Name<MdOutlineStarPurple500 size={16} fill="#F8B84E" 
                             className="-mt-1" color="#F8B84E" /></label>
