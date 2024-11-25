@@ -42,6 +42,7 @@ const Header = () => {
     const {setIsOpen} = useModalStore();
 
     const trackButtonClick = () => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
 
       ReactGA.event({
         category: 'Button',
