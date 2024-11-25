@@ -1,8 +1,18 @@
+import ReactGA from "react-ga4";
 import useModalStore from "../../store/modalStore";
 
 const SectionOne = () => {
 
     const {setIsOpen} = useModalStore();
+
+    const trackButtonClick = () => {
+
+        ReactGA.event({
+          category: 'Button',
+          action: 'Click',
+          label: "Demo/Sign Up",
+        });
+      };
 
     // lg:h-[69.8125em]
     return (

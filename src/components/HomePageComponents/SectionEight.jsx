@@ -7,12 +7,22 @@ import compliance from "../../assets/compliance.png";
 import security from "../../assets/security.png";
 import configurable from "../../assets/security.png";
 import useModalStore from "../../store/modalStore";
+import ReactGA from "react-ga4";
 
 
 
 const SectionEight = () => {
 
     const {setIsOpen} = useModalStore();
+
+    const trackButtonClick = () => {
+
+        ReactGA.event({
+          category: 'Button',
+          action: 'Click',
+          label: "Demo/Sign Up",
+        });
+      };
 
 
     const icons = [
