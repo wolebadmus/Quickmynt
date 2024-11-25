@@ -216,7 +216,7 @@ const DemoForm = () => {
 
                         <div className="flex justify-center">
                             <ReCAPTCHA
-                            sitekey="6LeJJoAqAAAAALvFBTzxnOgMz7GVHlPLS6CoYY66" // Replace with your free Site Key
+                            sitekey="6LfCMokqAAAAADJ7ZcxRM_TvCOHKPIq2WsfhvvhV" // Replace with your free Site Key
                             onChange={handleCaptchaChange}
                             ref={recaptchaRef}
                             />
