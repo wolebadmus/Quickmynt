@@ -149,7 +149,8 @@ const DemoForm = () => {
         
             {(success || err) && <ReportComponent />}
 
-            <div className={`z-[100] lg:z-[40] lg:w-full lg:max-w-[85em] fixed lg:absolute bg-white top-0 inset-0 lg:top-40 shadow-2xl left-0 right-0 lg:left-auto lg:right-auto flex-col  items-center pb-6 lg:pb-20 px-3 lg:px-0
+            <div className={`z-[100] lg:z-[40] lg:w-full lg:max-w-[85em] fixed lg:absolute bg-white top-0 inset-0 lg:top-40 shadow-2xl
+                                 left-0 right-0 lg:left-auto lg:right-auto flex-col  items-center pb-6 lg:pb-20 px-3 lg:px-0
             ${isOpen ? "flex" : "hidden"} overflow-y-auto overflow-x-hidden lg:overflow-y-hidden lg:h-fit transition-all duration-500 `}>
                 <div className="flex justify-between lg:justify-evenly items-center w-full lg:px-[1em] lg:max-w-[76.188em]  lg:px-[0.19em] py-[1.06em] ">
                     <NavLink to={"/"}>
