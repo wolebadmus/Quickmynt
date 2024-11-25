@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { FaCircleXmark } from "react-icons/fa6";
+import ReactGA from "react-ga4";
 
 
 
@@ -18,6 +19,11 @@ const DemoForm = () => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [err, setErr] = useState(false);
+
+    useEffect(() => {
+        ReactGA.initialize('G-84NY194QPT'); // Replace with your Measurement ID
+        ReactGA.send('pageview'); // Track the initial pageview
+      }, []);
 
     const recaptchaRef = useRef(null); // Reference for the reCAPTCHA component
     

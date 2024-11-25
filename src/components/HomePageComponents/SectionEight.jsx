@@ -70,7 +70,7 @@ const SectionEight = () => {
             </div>
         </div>
     
-        <button onClick={() => setIsOpen(true)} className="z-40 font-graphik text-[#F3FEF6] font-[500] text-[1.16em] lg:text-[1.4em] 
+        <button onClick={() => {trackButtonClick(); setIsOpen(true)}} className="z-40 font-graphik text-[#F3FEF6] font-[500] text-[1.16em] lg:text-[1.4em] 
         leading-[20.51px] lg:leading-[24.54px] bg-[#232E33] w-[9.78em] lg:w-[10.62em] h-[2.33em] lg:h-[2.75em] rounded-full p-0">
             Request a Demo
         </button>

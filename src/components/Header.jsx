@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import useModalStore from "../store/modalStore";
+import ReactGA from 'react-ga4';
 
 const Header = () => {
 
@@ -40,6 +41,16 @@ const Header = () => {
 
     const {setIsOpen} = useModalStore();
 
+    const trackButtonClick = () => {
+
+      ReactGA.event({
+        category: 'Button',
+        action: 'Click',
+        label: "Demo/Sign Up",
+      });
+    };
+    
+
     return(
         <>
         <header className={`fixed z-50 w-full transition-all duration-500 ${isScrolled && location.pathname === "/" ? 'bg-white shadow-2xl' : isScrolled && location.pathname !== "/" ? 'bg-white' : 'bg-transparent'} lg:py-4 h-[4.81em] lg:h-[2.688em] flex justify-center`}>
@@ -57,7 +68,7 @@ const Header = () => {
                  text-white hover:text-[#488559] hover:bg-[#FFF] hover:border lg:flex justify-center items-center hover:border-[#488559] text-center rounded-full w-[9.28em] h-[2.5em] text-[1.31em] leading-[25.36px] font-[600] font-graphik`}>
                     Sign up
                 </NavLink> */}
-                <button onClick={() => setIsOpen(true)} className={`hidden ${ (isScrolled)  ? 'bg-[#488559]' : 'bg-transparent border-2 border-[#fff]'}
+                <button onClick={() => {trackButtonClick(); setIsOpen(true)}} className={`hidden ${ (isScrolled)  ? 'bg-[#488559]' : 'bg-transparent border-2 border-[#fff]'}
                  text-white hover:text-[#488559] hover:bg-[#FFF] hover:border lg:flex justify-center items-center hover:border-[#488559] text-center rounded-full w-[9.28em] h-[2.5em] text-[1.31em] leading-[25.36px] font-[600] font-graphik`}>
                     Sign up
                 </button>
