@@ -1,63 +1,85 @@
+// import contact_one from "../../assets/contact_one.svg";
+// import contact_two from "../../assets/contact_two.svg";
+import { useState } from "react";
+import contactImg from "../../assets/contactImg.svg";
+// import { MdOutlineStarPurple500 } from "react-icons/md";
 
-
-import contact_one from "../../assets/contact_one.svg"
-import contact_two from "../../assets/contact_two.svg"
-import useModalStore from "../../store/modalStore";
-import ReactGA from 'react-ga4';
-
+// import useModalStore from "../../store/modalStore";
+// import ReactGA from "react-ga4";
 
 const SectionOne = () => {
+  // const { setIsOpen } = useModalStore();
 
-    const {setIsOpen} = useModalStore();
+  // const trackButtonClick = () => {
+  //   window.scrollTo({ top: 0, behavior: "instant" });
 
+  //   ReactGA.event({
+  //     category: "Button",
+  //     action: "Click",
+  //     label: "Demo/Sign Up",
+  //   });
+  // };
 
-    const trackButtonClick = () => {
-        window.scrollTo({ top: 0, behavior: 'instant' });
-  
-        ReactGA.event({
-          category: 'Button',
-          action: 'Click',
-          label: "Demo/Sign Up",
-        });
-      };
-      
+  const [formData, setFormData] = useState({
+    fname: "",
+    lname: "",
+    compEmail: "",
+    compName: "",
+    pnum: "",
+    employees_num: "",
+    customer_message: "",
+  });
 
-    return(
-        <section className="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between  w-full lg:max-w-[90em] mt-10 mb-4">
-            <div className="bg-[#F3FEF6] shadow-md  w-[20.438em] lg:w-[37.781em] h-[30.574em] lg:h-[34.762em] rounded-2xl mx-auto">
-                <img src= {contact_one} alt="" className="w-[23.438em] lg:w-[37.781em] h-[10.375em] lg:h-[17.375em] " />
-                <div className="w-full flex flex-col h-[19em] lg:h-[16em] justify-evenly items-center">
-                    <p className="text-[2.25em] lg:text-[2.05em] font-osande font-[500] lg:font-[600] leading-[41.41px] lg:leading-[41.41px] text-center text-[#488559]">
-                    Employer Inquiry
-                    </p>
-                    <p className="font-graphik text-[1.125em] lg:text-[1.125em] leading-[28px] text-center font-[400] lg:font-[500] text-[#434343] lg:max-w-[26.281em]">
-                        I'm interested in offering Payactiv to my employees and want to learn more!
-                    </p>
-                    <button onClick={() => { trackButtonClick(); setIsOpen(true)}} className="text-[#488559] text-[1em] lg:text-[1em] font-[400] lg:font-[500] leading-[17.6px] lg:leading-[17.6px] 
-                            w-[9.438em] lg:w-[9.438em] h-[2.762em] lg:h-[2.762em] rounded-full 
-                            font-graphik border border-[#488559] hover:bg-[#488559] hover:text-[#ffffff]">
-                            Visit Support
-                    </button>
-                </div>
-            </div>
-            <div className="bg-[#F3FEF6] shadow-md  w-[20.438em] lg:w-[37.781em] h-[30.574em] lg:h-[34.762em] rounded-2xl mx-auto">
-                <img src= {contact_two} alt="" className="w-[23.438em] lg:w-[37.781em] h-[10.375em] lg:h-[17.375em] " />
-                <div className="w-full flex flex-col h-[19em] lg:h-[16em] justify-evenly items-center">
-                    <p className="text-[2.25em] lg:text-[2.05em] font-osande font-[500] lg:font-[600] leading-[41.41px] lg:leading-[41.41px] text-center text-[#488559]">
-                    QuickMynt User Support
-                    </p>
-                    <p className="font-graphik text-[1.125em] lg:text-[1.125em] leading-[28px] text-center font-[400] lg:font-[500] text-[#434343] lg:max-w-[26.281em]">
-                    I use QuickMynt and need help with my account, or need to create one!
-                    </p>
-                    <button className="text-[#488559] text-[1em] lg:text-[1em] font-[400] lg:font-[500] leading-[17.6px] lg:leading-[17.6px] 
-                            w-[9.438em] lg:w-[9.438em] h-[2.762em] lg:h-[2.762em] rounded-full 
-                            font-graphik border border-[#488559] hover:bg-[#488559] hover:text-[#ffffff]">
-                            Visit Support
-                    </button>
-                </div>
-            </div>
-        </section>
-    );
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
+  return (
+    <section className="tiny:mt-[5rem] lg:mt-[9rem] grid tiny:[grid-template-columns:1fr] lg:[grid-template-columns:50fr_50fr] gap-4  w-full lg:max-w-[90em] mt-10 mb-4">
+      <div className="right_column w-full h-[auto] ">
+        <form action="" method="post" className="tiny:p-[2rem]  p-[4rem] w-full max-w-[100%] flex flex-col gap-8">
+          <h1 className="text-2xl font-bold font-osande">Contact Us</h1>
+          <div className=" w-full flex flex-col gap-3">
+            <label htmlFor="fname" className="text-[#00000073] flex font-graphik font-[500] text-[1.125em] lg:text-[1.25em] gap-1">
+              First Name
+            </label>
+            <input type="text" name="fname" id="" className="bg-[#EDEDED] px-2 text-[#434343]  w-full h-[2.75em] rounded-xl" value={formData.fname} onChange={handleChange} />
+          </div>
+          <div className=" w-full flex flex-col gap-3">
+            <label htmlFor="lname" className="text-[#00000073] flex font-graphik font-[500] text-[1.125em] lg:text-[1.25em] gap-1">
+              Last Name
+            </label>
+            <input type="text" name="lname" id="" className="bg-[#EDEDED] px-2 text-[#434343]  w-full h-[2.75em] rounded-xl" value={formData.lname} onChange={handleChange} />
+          </div>
+          <div className=" w-full flex flex-col gap-3">
+            <label htmlFor="email" className="text-[#00000073] flex font-graphik font-[500] text-[1.125em] lg:text-[1.25em] gap-1">
+              Email Address*
+            </label>
+            <input type="email" name="email" id="" className="bg-[#EDEDED] px-2 text-[#434343]  w-full h-[2.75em] rounded-xl" value={formData.email} onChange={handleChange} />
+          </div>
+          <div className=" w-full flex flex-col gap-3">
+            <label htmlFor="customer_message" className="text-[#00000073] flex font-graphik font-[500] text-[1.125em] lg:text-[1.25em] gap-1">
+              Message*
+            </label>
+            <textarea name="customer_message" id="" className="bg-[#EDEDED] px-2 text-[#434343] pt-3  w-full h-[12.375em] rounded-xl" value={formData.customer_message} onChange={handleChange} />
+          </div>
+          <button
+            onClick={() => {
+              // trackButtonClick();
+              // setIsOpen(true);
+            }}
+            className=" z-40 text-[#F3FEF6] font-graphik font-[500] text-[1.0112em] lg:text-[1.094em] leading-[17.8px] lg:leading-[23.05px]
+                 bg-[#488559] w-[11.6669em] lg:w-[100%] h-[2.3887em] lg:h-[3.0744em] hover:text-[#488559]
+                  hover:bg-[#FFF] hover:border hover:border-[#488559] rounded-full z-40 mx-auto lg:mx-0 ">
+            Continue
+          </button>
+        </form>
+      </div>
+      <div className="w-full h-[auto] relative overflow-hidden rounded-[2rem]">
+        <img src={contactImg} alt="" className="absolute right-[0] rounded-[2rem] hidden lg:block" />
+      </div>
+    </section>
+  );
 };
 export default SectionOne;

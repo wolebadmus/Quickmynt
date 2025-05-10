@@ -6,7 +6,7 @@ const SectionThree = () => {
         <section className="flex justify-center w-full ">
             <div className="flex flex-col lg:flex-row max-w-[23.1875em] w-full lg:max-w-[90em] h-[42.586em] gap-6 lg:gap-0 ">
 
-                <div className="flex flex-col gap-3 lg:gap-10 justify-center w-full items-center lg:items-start">
+                <div className="lg:ml-[4rem] flex flex-col gap-3 lg:gap-10 justify-center w-full items-center lg:items-start">
                     <p className="text-[#232E33] max-w-[10.9025em] w-full lg:max-w-[11em] font-[500] lg:font-[700] text-[1.875em] lg:text-[3.75em] leading-[36.81px] lg:leading-[62px] font-osande">
                         Strengthening Business Starts with Supporting People
                     </p>
