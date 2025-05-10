@@ -159,7 +159,7 @@ const DemoForm = () => {
           <p className="font-graphik font-[300] lg:font-[400] text-[1em] lg:text-[1.5em] leading-[24px] lg:leading-[35px] max-w-[21.375em] lg:max-w-[40.063em]">Ready to explore how QuickMynt can transform financial access for your team? Request a personalized demo today and discover the seamless, cost-free way to provide instant wage access and wellness tools for your employees.</p>
         </div>
         {/* <div className="flex w-full px-[1em] lg:max-w-[76.188em] lg:items-center justify-between"> */}
-        <div className="tiny:[grid-template-columns:1fr;] grid [grid-template-columns:50fr_50fr;]">
+        <div className="tiny:[grid-template-columns:1fr;] grid lg:[grid-template-columns:50fr_50fr;] gap-[4rem]">
           {/* <form action="" method="post" className="w-full max-w-[20.625em] flex flex-col gap-8"> */}
           <form action="" method="post" className="w-full max-w-[100%] flex flex-col gap-8">
             <div className=" w-full flex flex-col gap-3">

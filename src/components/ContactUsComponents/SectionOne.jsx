@@ -36,7 +36,7 @@ const SectionOne = () => {
   };
 
   return (
-    <section className="tiny:mt-[5rem] lg:mt-[9rem] grid tiny:[grid-template-columns:1fr] lg:[grid-template-columns:50fr_50fr] gap-4  w-full lg:max-w-[90em] mt-10 mb-4">
+    <section className="tiny:mt-[5rem] lg:mt-[9rem] mb-[4rem] grid tiny:[grid-template-columns:1fr] lg:[grid-template-columns:50fr_50fr] gap-4  w-full lg:max-w-[90em] mt-10 mb-4">
       <div className="right_column w-full h-[auto] ">
         <form action="" method="post" className="tiny:p-[2rem]  p-[4rem] w-full max-w-[100%] flex flex-col gap-8">
           <h1 className="text-2xl font-bold font-osande">Contact Us</h1>

@@ -1,9 +1,9 @@
 // Icons Images
-import facebooklogo from '../assets/FacebookLogo.svg'
-import InstagramLogo from '../assets/InstagramLogo.png'
-import TwitterXLogo from '../assets/TwitterLogo.png'
-import LinkedinLogo from '../assets/LinkedinLogo.png'
-import YoutubeLogo from '../assets/YoutubeLogo.png'
+import facebooklogo from "../assets/FacebookLogo.svg";
+import InstagramLogo from "../assets/InstagramLogo.png";
+import TwitterXLogo from "../assets/TwitterLogo.png";
+import LinkedinLogo from "../assets/LinkedinLogo.png";
+import YoutubeLogo from "../assets/YoutubeLogo.png";
 // Icons Images
 
 // import { FaFacebook, FaLinkedinIn, FaTiktok } from "react-icons/fa";
@@ -16,13 +16,14 @@ const Footer = () => {
     <footer className="lg:!px-[6rem] bg-[#FFFFFF] flex flex-col max-w-[20.69em] w-full lg:max-w-[90em] h-[48.75em] lg:h-[20em] gap-8 lg:gap-0 justify-center lg:justify-evenly">
       <div className="flex flex-col lg:flex-row justify-evenly items-start lg:items-center text-left gap-8 lg:gap-0">
         <div className="flex flex-col gap-6 lg:w-full lg:max-w-[12.44em]">
-          <img src={logo} alt="Quick Mynt" className="w-[11.99em] h-[4.88em] lg:w-[12.44em] lg:h-[5.06em] object-contain" />
+          <img src={logo} alt="Quick Mynt" className="tiny:mt-[3rem] w-[11.99em] h-[4.88em] lg:w-[12.44em] lg:h-[5.06em] object-contain" />
           <div className="flex justify-between items-center">
-              <img src={facebooklogo} alt="" />
-              <img src={TwitterXLogo} alt="" />
-              <img src={InstagramLogo} alt="" />
-              <img src={YoutubeLogo} alt="" />
-              <img src={LinkedinLogo} alt="" />          </div>
+            <img src={facebooklogo} alt="" />
+            <img src={TwitterXLogo} alt="" />
+            <img src={InstagramLogo} alt="" />
+            <img src={YoutubeLogo} alt="" />
+            <img src={LinkedinLogo} alt="" />{" "}
+          </div>
         </div>
         <FooterNavBar />
         <p className="max-w-[17.88em] w-full lg:max-w-[30.38em] font-graphik font-[400] text-[#434343] text-[0.9em] lg:text-[0.94em] leading-[28.92px] lg:leading-[30px]">
