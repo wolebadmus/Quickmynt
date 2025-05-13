@@ -50,7 +50,7 @@ const NavBar = ({ isScrolled }) => {
   }, [location]);
 
   return (
-    <nav className="hidden lg:flex w-full ">
+    <nav className="hidden md:flex w-full ">
       <ul className="flex justify-center gap-8 w-full">
         {location.pathname === "/"
           ? links.map((linkItem, idx) => (
