@@ -9,7 +9,7 @@ import YoutubeLogo from "../assets/YoutubeLogo.png";
 // import { FaFacebook, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import FooterNavBar from "./FooterNavBar";
 import logo from "../assets/newLogo.png";
-import { FaXTwitter } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
