@@ -10,8 +10,8 @@ const SectionThree = () => {
             <span className="text-[#488559] w-[32.4375em] font-[600] font-graphik">QuickMynt</span> is important for your diverse workforce. Data shows how highly they value instant access to earned wages, driving financial security and flexibility across generations.
           </p>
         </div>
-        <div className="flex justify-end ">
-          <img src={stats} alt="stats" className="max-w-[22.125em] lg:max-w-[54.063em] h-[21.75em] lg:h-[47.586em] absolute right-0 object-contain " />
+        <div className="h-[auto] w-[inherit] !relative">
+          <img src={stats} alt="stats" className="max-w-[22.125em] lg:max-w-[54.063em] h-[21.75em] lg:h-[47.586em] absolute lg:!absolute right-0 object-contain w-[100%]" />
         </div>
       </div>
     </section>

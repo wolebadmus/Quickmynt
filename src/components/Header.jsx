@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`tiny:height-[6rem] tiny:!p-[0] !fixed lg:h-[5rem] lg:!p-0 z-50 w-full transition-all duration-500 ${isScrolled && location.pathname === "/" ? "bg-white shadow-2xl fixed" : isScrolled && location.pathname !== "/" ? "bg-white" : "bg-white shadow-2xl relative"} lg:py-4 h-[4.81em] lg:h-[2.688em] flex justify-center  `}>
+      <header className={`tiny:height-[6rem] tiny:!p-[0] !fixed lg:!p-0 z-50 w-full transition-all duration-500 !w-[100vw] ${isScrolled && location.pathname === "/" ? "bg-white shadow-2xl fixed" : isScrolled && location.pathname !== "/" ? "bg-white" : "bg-white shadow-2xl relative"} lg:py-4 h-[4.81em] lg:h-[2.688em] flex justify-center tiny:!h-[10vh] xl:!h-[10vh]`}>
         <div
           className="tiny:m-[0] lg:ml-[1rem] flex justify-between lg:justify-evenly items-center w-full px-[1em] lg:max-w-[90em] h-full 
              px-[0.25em] lg:px-[0.19em] py-[0.06em] ">
