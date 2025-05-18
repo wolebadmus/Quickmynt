@@ -1,59 +1,61 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
-
+html {
+  overflow-x: hidden;
+}
 
 :root {
   line-height: 1;
   font-size: 1em;
 }
 
-
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 0 6rem !important;
+  }
+}
+
+#root > * > * {
+  /* padding: 1.5rem 1.5rem 1.5rem 1.5rem; */
+}
+
 .banner {
-  background: url("../src/assets/banner.jpg");
+  background: url("../src/assets/heroImg.png");
   background-size: cover;
   /* background-size: 1800px ; */
   background-repeat: no-repeat;
-  
 }
 .stats {
   background: url("../src/assets/statistics.svg");
   background-size: cover;
-  
 }
 
 @media (max-width: 720px) {
   .banner {
-    background: url("../src/assets/banner1.png");
+    background: url("../src/assets/heroImgMb.png");
     background-size: cover;
     /* background-size: 1800px ; */
     background-repeat: no-repeat;
-    
   }
   .stats {
     background: url("../src/assets/statisticsMb.svg");
     background-size: cover;
-    
   }
-  
 }
 
-
-
-
-
-
 @keyframes rotateBackAndForthRight {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotateY(30deg);
   }
   50% {
@@ -62,13 +64,13 @@
 }
 
 .rotating-rightphone {
-
   animation: rotateBackAndForthRight 5s infinite linear;
   animation-delay: 0s;
 }
 
 @keyframes rotateBackAndForthLeft {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotateY(-30deg);
   }
   50% {
@@ -77,229 +79,218 @@
 }
 
 .rotating-leftphone {
-
   animation: rotateBackAndForthLeft 5s infinite linear;
   animation-delay: 0s;
 }
 
-
-
-
-
-
-
-
 /* Graphik Font Faces */
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikBlack.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikBlack.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikBlackItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikBlackItalic.otf") format("opentype");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikBold.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikBoldItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikBoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikExtralight.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikExtralight.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikExtralightItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikExtralightItalic.otf") format("opentype");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikLight.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikLightItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikLightItalic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikMedium.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikMedium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikMediumItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikMediumItalic.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikRegular.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikRegular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikRegularItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikRegularItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikSemibold.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikSemibold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikSemiboldItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikSemiboldItalic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikSuper.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikSuper.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikSuperItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikSuperItalic.otf") format("opentype");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikThin.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikThin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('../src/assets/fonts/Graphik/GraphikThinItalic.otf') format('opentype');
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik/GraphikThinItalic.otf") format("opentype");
   font-weight: 100;
   font-style: italic;
 }
 
 /* Osande Font Faces */
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-Light.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-LightItalic.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-LightItalic.otf") format("opentype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-Medium.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-MediumItalic.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-MediumItalic.otf") format("opentype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-Regular.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-RegularItalic.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-RegularItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-SemiBold.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-SemiBoldItalic.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-SemiBoldItalic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-Thin.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-ThinItalic.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-ThinItalic.otf") format("opentype");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-XBold.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-XBold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Osande';
-  src: url('../src/assets/fonts/Osande/Osande-XBoldItalic.otf') format('opentype');
+  font-family: "Osande";
+  src: url("../src/assets/fonts/Osande/Osande-XBoldItalic.otf") format("opentype");
   font-weight: 800;
   font-style: italic;
 }
-
-
-
