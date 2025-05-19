@@ -16,7 +16,7 @@ const SectionOne = () => {
 
   // md:h-[69.8125em]
   return (
-    <section className={"xl:![background-repeat:round;] tiny:min-h-[90vh] tiny:relative  mt-[0] md:mt-[10vh] !bg-cover bg-center banner flex flex-col w-full  md:min-h-[90vh] pt-[2.8em] bg-right  md:bg-top !relative justify-center items-center gap-6 !bg-[length:103rem] xl:![background-position-x:-0rem] md:![background-position-x:-19rem] md:!relative tiny:!mt-10vh xl:!mt-[10vh]"}>
+    <section className={"xl:![background-repeat:round;] tiny:min-h-[90vh] tiny:relative  mt-[0] md:mt-[10vh] !bg-cover bg-center banner flex flex-col w-full  md:min-h-[90vh] pt-[2.8em] bg-right  md:bg-top !relative justify-center items-center gap-6 !bg-[length:103rem] xl:![background-position-x:-0rem] md:![background-position-x:-19rem] md:!relative tiny:!mt-10vh xl:!mt-[15vh] tiny:!h-[100vh]"}>
       <div className="opacity-0 absolute w-full h-full bg-custom-gradient mix-blend-multiply -mt-[2.8em]"></div>
       <div className="md:flex md:justify-center md:relative !relative tiny:!absolute md:top-[0] md:left-[0] tiny:bottom-[4rem] flex flex-col justify-start gap-6 md:gap-5 md:w-full md:max-w-[90em] h-[22.249em] md:h-[100%]">
         <div className="md:relative md:top-[-9rem] lg:top-[0] md:ml-[3rem] pt-15 z-40 flex flex-col justify-center gap-4 md:gap-6 max-w-[20.9375em] md:max-w-[33.563em]  ">
