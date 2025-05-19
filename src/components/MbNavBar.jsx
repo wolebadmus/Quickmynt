@@ -119,7 +119,9 @@ const mbNavBar = ({ showMbMenu, setShowMbMenu }) => {
               </li>
             ))}
       </ul>
-      <button className={`m-[auto] w-[15rem] h-[4rem] rounded-full font-bold !bg-[#488559] border-2 border-[#488559] "bg-[#488559] border-2 border-[#488559] !text-[#ffffff] mt-[2rem]`}>Sign Up</button>
+      <a className="text-center" href="https://docs.google.com/forms/d/1vp3llZpvKQNrB8ja5hym4-lG0GE7meZGEh6DwtCwZRU/" rel="noopener noreferrer">
+        <button className={`m-[auto] w-[15rem] h-[4rem] rounded-full font-bold !bg-[#488559] border-2 border-[#488559] "bg-[#488559] border-2 border-[#488559] !text-[#ffffff] mt-[2rem]`}>Sign Up</button>
+      </a>
 
       <button
         onClick={() => {

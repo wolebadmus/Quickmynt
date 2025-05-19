@@ -15,9 +15,9 @@ function App() {
     <div className={`flex flex-col items-center scroll-smooth bg-transparent ${isOpen ? "overflow-y-hidden" : "overflow-y-auto"}`}>
       <Header />
       <Routes>
-        <Route path="/" Component={LandingPage} />
-        <Route path="/about-us" Component={AboutUsPage} />
-        <Route path="/contact-us" Component={ContactUsPage} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
       <Footer />
       <DemoForm />
