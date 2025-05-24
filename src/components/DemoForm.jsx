@@ -144,7 +144,7 @@ const DemoForm = () => {
             ${isOpen ? "flex" : "hidden"} overflow-y-auto overflow-x-hidden lg:overflow-y-hidden lg:h-fit transition-all duration-500 `}>
         <div className="flex justify-between lg:justify-evenly items-center w-full lg:px-[1em] lg:max-w-[76.188em]  lg:px-[0.19em] py-[1.06em] ">
           <NavLink to={"/"}>
-            <img src={new_logo} alt="Quick Mynt" className="w-[18.438em] h-[3.813em] object-contain" />
+            <img src={new_logo} alt="Quick Mynt" className=" tiny:!w-[40vw] tiny:!mb-[4vw]  md:w-[18.438em] md:h-[3.813em] object-contain" />
           </NavLink>
 
           <p className="hidden lg:block lg:w-full font-osande font-[] lg:font-[600] text-[] lg:text-[3em] text-[#488559] text-center">Request a Demo</p>
@@ -159,7 +159,7 @@ const DemoForm = () => {
           <p className="font-graphik font-[300] lg:font-[400] text-[1em] lg:text-[1.5em] leading-[24px] lg:leading-[35px] max-w-[21.375em] lg:max-w-[40.063em]">Ready to explore how QuickMynt can transform financial access for your team? Request a personalized demo today and discover the seamless, cost-free way to provide instant wage access and wellness tools for your employees.</p>
         </div>
         {/* <div className="flex w-full px-[1em] lg:max-w-[76.188em] lg:items-center justify-between"> */}
-        <div className="tiny:[grid-template-columns:1fr;] grid lg:[grid-template-columns:50fr_50fr;] gap-[4rem]">
+        <div className="tiny:w-[95%] tiny:[grid-template-columns:1fr;] grid lg:[grid-template-columns:50fr_50fr;] gap-[4rem] md:w-[90%]">
           {/* <form action="" method="post" className="w-full max-w-[20.625em] flex flex-col gap-8"> */}
           <form action="" method="post" className="w-full max-w-[100%] flex flex-col gap-8">
             <div className=" w-full flex flex-col gap-3">

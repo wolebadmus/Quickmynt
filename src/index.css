@@ -8,6 +8,10 @@ html {
   overflow-x: hidden;
 }
 
+* {
+  /* outline: 1px solid red !important; */
+}
+
 :root {
   line-height: 1;
   font-size: 1em;
@@ -38,7 +42,7 @@ html {
 
 @media (max-width: 720px) {
   .banner {
-    background: url("../src/assets/heroImgMb.png");
+    background: url("../src/assets/mobileHeroImg.png");
     background-size: cover;
     /* background-size: 1800px ; */
     background-repeat: no-repeat;
