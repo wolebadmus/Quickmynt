@@ -77,7 +77,7 @@ const mbNavBar = ({ showMbMenu, setShowMbMenu }) => {
     <nav className={`pr-[0.7rem] pl-[1.2rem] md:hidden flex flex-col justify-start gap-8 shadow-2xl  py-3 fixed z-50 bg-white top-0 w-full transition-all duration-300 ${showMbMenu ? "h-[auto]" : "max-h-0 !py-0"}   overflow-hidden`}>
       <div className="flex justify-between px-0">
         <NavLink to="/" onClick={() => setShowMbMenu(false)}>
-          <img src={logo} alt="Quick Mynt" className="w-[9.438em] h-[3.813em] object-contain" />
+          <img src={logo} alt="Quick Mynt" className="w-[40vw] h-[3.813em] object-contain" />
         </NavLink>
         <button className="scale-[1.5] bg-transparent lg:hidden p-0 border-none outline-none focus:border-none focus:outline-none" onClick={() => setShowMbMenu(false)}>
           <img src={cancelIcon} alt="" />

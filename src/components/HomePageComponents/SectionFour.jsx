@@ -30,7 +30,7 @@ const SectionFour = () => {
   // ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`
 
   return (
-    <section className="max-w-[23.1875em] w-full lg:max-w-[90em] flex flex-col-reverse lg:flex-row justify-center lg:justify-around gap-8 lg:gap-[8rem] xl:gap-0">
+    <section className="max-w-[23.1875em] w-full lg:max-w-[90em] flex flex-col-reverse lg:flex-row justify-center lg:justify-evenly lg:h-[85vh] gap-8 lg:gap-[8rem] xl:gap-0">
       <div className="flex justify-center ">
         <img
           ref={imageRef}
