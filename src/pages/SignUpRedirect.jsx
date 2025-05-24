@@ -41,18 +41,3 @@ export default function SignUpRedirect() {
     </div>
   );
 }
-
-
-//To be removed when connected to good network
-
-// import { useEffect } from "react";
-
-// export default function SignUpRedirect() {     // ← default export
-//   useEffect(() => {
-//     window.location.replace(
-//       "https://docs.google.com/forms/d/1vp3llZpvKQNrB8ja5hym4-lG0GE7meZGEh6DwtCwZRU/"
-//     );
-//   }, []);
-
-//   return null;
-// }
