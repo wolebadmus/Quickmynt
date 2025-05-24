@@ -52,39 +52,40 @@ const Header = () => {
 
   return (
     <>
-      <header className={`tiny:height-[6rem] tiny:!p-[0] !fixed lg:!p-[2rem] z-50 w-full transition-all duration-500 !w-[100vw] ${isScrolled && location.pathname === "/" ? "bg-white shadow-2xl fixed" : isScrolled && location.pathname !== "/" ? "bg-white" : "bg-white shadow-2xl relative"} lg:py-4 h-[4.81em] lg:h-[2.688em] flex justify-center tiny:!h-[10vh] xl:!h-[15vh]`}>
+      <header className={`tiny:height-[6rem] tiny:!p-[0] !fixed lg:!p-[2rem] z-50 w-full transition-all duration-500 shadow-2xl bg-white lg:py-4 h-[4.81em] lg:h-[2.688em] flex justify-center tiny:!h-[10dvh] xl:!h-[15vh]`}>
         <div
-          className="tiny:m-[0] lg:ml-[1rem] flex justify-between lg:justify-evenly items-center w-full px-[1em] lg:max-w-[90em] h-full 
-             px-[0.25em] lg:px-[0.19em] py-[0.06em] ">
-          <NavLink to={"/"}>{location.pathname === "/" ? <img src={new_logo_white} alt="Quick Mynt" className="tiny:w-[8.2em] h-[2.51em] lg:w-[20.33em] lg:h-[3.78em] object-contain" /> : <img src={logo} alt="Quick Mynt" className="w-[10.2em] h-[2.51em] md:w-[20.33em] lg:h-[3.78em] object-contain" />}</NavLink>
+          className="tiny:m-[0] lg:ml-[1rem] flex justify-between lg:justify-evenly items-center w-full px-[1em] lg:max-w-[100vw] h-full 
+              lg:px-[0.19em] py-[0.06em] ">
+          <NavLink to={"/"}>{location.pathname === "/" ? <img src={new_logo_white} alt="Quick Mynt" className="tiny:w-[30vw] h-[auto] lg:w-[20.33em] lg:h-[3.78em] object-contain xl:w-[30vw]" /> : <img src={logo} alt="Quick Mynt" className="w-[10.2em] h-[2.51em] md:w-[20.33em] lg:h-[3.78em] object-contain" />}</NavLink>
           <NavBar showMbMenu={showMbMenu} isScrolled={isScrolled} />
-          <button
-            onClick={() => {
-              trackButtonClick();
-              setIsOpen(true);
-            }}
-            className={`tiny:hidden tiny:py-[5px] tiny:px-[10px] tiny:w-[auto] tiny:text-[1.09rem] md:!block ${isScrolled ? "bg-transparent border-[2px] border-[#488559]" : "bg-transparent !border-[2px] font-bold border-[#488559]"}
-                 text-[#488559] hover:text-[#488559] hover:bg-[#FFF] hover:border lg:flex justify-center items-center hover:border-[#488559] text-center rounded-full w-[auto] h-[2.5em] text-[1.31em] leading-[25.36px] font-[600] font-graphik whitespace-nowrap px-[1rem]`}>
-            Request Advance
-          </button>
-          <NavLink to="/sign-up" className="tiny:hidden md:block ml-[1rem]">
-  <button
-    className={`tiny:py-[5px] tiny:px-[10px] tiny:w-auto tiny:text-[1.09rem]
-      ${isScrolled ? "bg-transparent border-[2px] border-[#488559]"
-                   : "bg-transparent !border-[2px] font-bold border-[#488559]"}
-      text-[#488559] hover:text-[#488559] hover:bg-[#FFF] hover:border
-      lg:flex justify-center items-center hover:border-[#488559]
-      text-center rounded-full w-auto h-[2.5em] text-[1.31em]
-      leading-[25.36px] font-[600] font-graphik whitespace-nowrap px-[1rem]`}>
-    Sign Up
-  </button>
-</NavLink>
-
-          {!showMbMenu && (
-            <button className="scale-[1.5] bg-transparent md:hidden p-0 border-none outline-none focus:border-none focus:outline-none" onClick={() => setShowMbMenu(true)}>
-              {location.pathname === "/" ? <FaBars size={25} color={` ${isScrolled ? "#434343" : "#000000"} `} /> : <FaBars size={25} color={"#434343"} />}
+          {/* <NavLink to="/" className={`hidden ${ (isScrolled)  ? 'bg-[#488559]' : 'bg-transparent border-2 border-[#fff]'}
+                 text-white hover:text-[#488559] hover:bg-[#FFF] hover:border lg:flex justify-center items-center hover:border-[#488559] text-center rounded-full w-[9.28em] h-[2.5em] text-[1.31em] leading-[25.36px] font-[600] font-graphik`}>
+                    Sign up
+                </NavLink> */}
+          <div className="flex">
+            <button
+              onClick={() => {
+                trackButtonClick();
+                setIsOpen(true);
+              }}
+              className={`tiny:flex tiny:items-center tiny:w-auto tiny:text-[3vw] tiny:px-[24px] tiny:p-inherit xl:width-[17vw] tiny:py-[5px] tiny:mr-[5vw] lg:mr-[1vw] tiny:px-[10px]  md:!block ${isScrolled ? "bg-transparent border-[2px] border-[#488559]" : "bg-transparent !border-[2px] font-bold border-[#488559]"}
+                 text-[#488559] hover:text-[#488559] hover:bg-[#FFF] hover:border lg:flex justify-center items-center hover:border-[#488559] text-center rounded-full w-[auto] h-[2.5em] xl:w-[20vw] text-[1.31em] leading-[25.36px] font-[600] font-graphik whitespace-nowrap px-[1rem] xl:h-[9vh] xl:text-[3vh]`}>
+              Request Advance
             </button>
-          )}
+            <a href="https://docs.google.com/forms/d/1vp3llZpvKQNrB8ja5hym4-lG0GE7meZGEh6DwtCwZRU/" rel="nooperner noreferrer">
+              <button
+                className={`tiny:hidden  ${isScrolled ? "bg-[#488559] border-2 border-[#488559]" : "bg-[#488559] border-2 border-[#488559]"}
+                 text-[#ffffff] hover:text-[#488559] hover:bg-[#FFF] hover:border whitespace-nowrap ml-[1rem] md:flex md:mr-[.5rem] justify-center items-center hover:border-[#488559] text-center rounded-full h-[2.5em] text-[1.31em] leading-[25.36px] font-[600] font-graphik text-[#FFF] lg:ml-[1rem] sm:!w-[6rem] lg:!w-[10rem] xl:!w-[12vw]  tiny:!w-[30vw] xl:h-[9vh] xl:text-[3vh]`}>
+                Sign Up
+              </button>
+            </a>
+
+            {!showMbMenu && (
+              <button className="scale-[1.5] bg-transparent md:hidden p-0 border-none outline-none focus:border-none focus:outline-none" onClick={() => setShowMbMenu(true)}>
+                {location.pathname === "/" ? <FaBars size={25} color={` ${isScrolled ? "#434343" : "#000000"} `} /> : <FaBars size={25} color={"#434343"} />}
+              </button>
+            )}
+          </div>
         </div>
       </header>
 

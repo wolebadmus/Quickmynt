@@ -20,10 +20,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
-        {/* <Route path="/sign-up" element={<SignUpPage />} /> */}
         <Route path="/sign-up" element={<SignUpRedirect />} />
-         {/* (optional) keep old /signup for safety */}
-        {/* <Route path="/signup" element={<Navigate to="/sign-up" replace />} /> */}
       </Routes>
       <Footer />
       <DemoForm />
