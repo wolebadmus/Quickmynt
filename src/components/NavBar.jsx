@@ -60,7 +60,7 @@ const NavBar = ({ isScrolled }) => {
                     to={linkItem.url}
                     onClick={(event) => handleScrollToSection(event, linkItem)}
                     className={`${isScrolled ? "text-[#434343]" : "text-[#434343]"} 
-                    font-graphik font-[500] text-[1.333em]`}>
+                    font-graphik font-[500] text-[4vh]`}>
                     {linkItem.textUrl}
                   </NavLink>
                 ) : (
