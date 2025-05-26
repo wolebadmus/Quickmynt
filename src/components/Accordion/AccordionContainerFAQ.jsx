@@ -9,7 +9,7 @@ const AccordionContainerFAQ = (props) => {
   return (
     <div className="flex flex-col gap-4">
       <p
-        className="mt-[4rem] flex justify-between items-start cursor-pointer font-graphik font-[600] text-[0.892em] lg:text-[1.688em] leading-[23.25px] lg:leading-[44px] "
+        className="mt-[1rem] flex justify-between items-start cursor-pointer font-graphik font-[600] text-[0.892em] lg:text-[1.688em] leading-[23.25px] lg:leading-[44px] "
         onClick={() => {
           props.clickHandler(props.position);
         }}>

@@ -57,48 +57,34 @@ const SectionSeven = () => {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <section id="faq" className={`w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[111.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
-        <div className="flex flex-col gap-5 items-center">
-            <div className="w-full max-w-[21.31em] lg:max-w-[90em] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
-                <div className="flex w-full justify-start items-center ">
-                    <p className="max-w-[18.32em] w-full lg:max-w-[8.69em] font-[800] font-osande text-[1.88em] lg:text-[3.75em] leading-[40px] lg:leading-[69.02px]">
-                    Wondering How QuickMynt Works? Let's Break It Down
-                    </p>
-                </div>
-                <div className="flex flex-col gap-3 lg:gap-8 items-start  w-full">
-                    <div className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000
+    <section id="faq" className={`md:!pt-[2.5rem] w-full transition-all duration-1000 ${showFull ? "h-[75em] lg:h-[111.25em]" : "h-[63.12em] lg:h-[96.88em]"} bg-[#00204C] relative pt-14`}>
+      <div className="flex flex-col gap-5 items-center">
+        <div className="w-full max-w-[21.31em] lg:max-w-[90em] text-white flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 ">
+          <div className="flex w-full justify-start items-center ">
+            <p className="max-w-[18.32em] w-full lg:max-w-[8.69em] font-[800] font-osande text-[1.88em] lg:text-[3.75em] leading-[40px] lg:leading-[69.02px]">Wondering How QuickMynt Works? Let's Break It Down</p>
+          </div>
+          <div className="flex flex-col gap-3 lg:gap-8 items-start  w-full">
+            <div
+              className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000
                       ${showFull ? "h-[48.75em] lg:h-[80.38em]" : "h-[37.5em] lg:h-[61.68em]"} overflow-hidden`}>
-                      <AccordionFAQ accordionData={accordionData} />
-                    </div>
-                    <button 
-                    className="flex p-0 text-[#46BDCE] gap-8 font-graphik font-[700] text-[1em] lg:text-[1.5em] 
+              <AccordionFAQ accordionData={accordionData} />
+            </div>
+            <button
+              className="flex p-0 text-[#46BDCE] gap-8 font-graphik font-[700] text-[1em] lg:text-[1.5em] 
                             leading-[16.91px] lg:leading-[32px] justify-center items-center bg-transparent
                             border-none outline-none focus:border-none focus:outline-none
                             "
-                    onClick={() => setShowFull(prev => !prev)}
-                    >
-                    View {showFull ? "less" : "more"} <FaArrowRight className="h-[1.36em] lg:h-[1.28em] w-[1.36em] lg:w-[1.9em]" />
-                    </button>
-                </div>
-            </div>
+              onClick={() => setShowFull((prev) => !prev)}>
+              View {showFull ? "less" : "more"} <FaArrowRight className="h-[1.36em] lg:h-[1.28em] w-[1.36em] lg:w-[1.9em]" />
+            </button>
+          </div>
         </div>
+      </div>
 
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-        <svg
-          className="w-full h-[6.25em] lg:h-[18.75em] lg:h-[25em]"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="m395.33,47.74c-220.05,-86.96 -429.38,-32.19 -506.53,6.06l-23.57,506.88l1563.35,-18.72c0.14,-146.03 -8.22,-442.99 -42.7,-462.6c-43.1,-24.52 -146.45,-97.56 -388.41,-34.06c-241.97,63.51 -327.07,111.14 -602.13,2.44l-0.01,0z"
-            fill="#003986"
-            transform="matrix(1 0 0 1 0 0)"
-          />
-          <path
-            d="m385.77,138.4c-239.63,-37.35 -455.84,30.83 -533.98,69.59l18.45,385.34l1648.06,-214.77c-12.34,-110.17 -46.53,-333.08 -84.59,-343.45c-47.57,-12.96 -154.38,-74.17 -404.27,4.78c-249.89,78.96 -344.12,145.19 -643.67,98.51z"
-            fill="#FCEBE3"
-          />
+        <svg className="w-full h-[6.25em] lg:h-[18.75em] lg:h-[25em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path d="m395.33,47.74c-220.05,-86.96 -429.38,-32.19 -506.53,6.06l-23.57,506.88l1563.35,-18.72c0.14,-146.03 -8.22,-442.99 -42.7,-462.6c-43.1,-24.52 -146.45,-97.56 -388.41,-34.06c-241.97,63.51 -327.07,111.14 -602.13,2.44l-0.01,0z" fill="#003986" transform="matrix(1 0 0 1 0 0)" />
+          <path d="m385.77,138.4c-239.63,-37.35 -455.84,30.83 -533.98,69.59l18.45,385.34l1648.06,-214.77c-12.34,-110.17 -46.53,-333.08 -84.59,-343.45c-47.57,-12.96 -154.38,-74.17 -404.27,4.78c-249.89,78.96 -344.12,145.19 -643.67,98.51z" fill="#FCEBE3" />
         </svg>
       </div>
     </section>
