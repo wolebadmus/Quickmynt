@@ -36,11 +36,18 @@ const SectionEight = () => {
     
 
     return (
-        <section className="w-full bg-[#FCEBE3] flex flex-col justify-start items-center gap-10 pb-10 lg:h-[53.375em]">
+        <section className="w-full bg-[#FCEBE3] flex flex-col justify-start items-center gap-10 pb-10 lg:h-[60.375em]">
         <div className="flex flex-col justify-center items-center max-w-[23.18em] lg:w-full lg:max-w-[90em] gap-8">
             <p className="max-w-[23.18em] w-full lg:max-w-[18.69em] text-[#525B60] font-osande lg:font-graphik font-[700] lg:mb-16 lg:font-[500] text-[1.88em] lg:text-[3em] leading-[40px] lg:leading-[52.8px] text-center">
-                We Integrate with leading payroll providers used by most SMBs
+                We Integrate with leading payroll providers commonly used by SMBs
+                 <p className="w-text-[1.1rem] md:text-[1.125rem] leading-[1.9rem] text-gray-700 mt-10 max-w-3xl mx-auto px-4 md:px-0 text-left">
+                <strong class="text-[1.6rem] font-semibold">Disclaimer</strong> <br />
+              Logos shown represent supported or planned integrations.
+                QuickMynt is independently operated and not affiliated with, endorsed by, or sponsored by these companies.
+                All trademarks are property of their respective owners.
             </p>
+            </p>
+           
             <div className="flex flex-wrap lg:flex-nowrap w-full lg:justify-between items-center">
                 {icons.map((ico, idx) => (
                     <img src={ico.imgsrc} key={idx} alt="" className={`object-contain ${ico.className} flex-[33.33%] lg:flex-auto mt-3 lg:mt-0`} />
@@ -67,7 +74,8 @@ const SectionEight = () => {
                     Security
                 </p>
                 <p className="font-graphik text-[#525B60] font-[400] text-[1.13em] leading-[26px] text-center max-w-[23.6em] h-[6.5em]">
-QuickMynt follows industry best practices and is on track to meet SOC 2 Type II, SOC 1 Type II, and ISO 27001 certification standards as part of our compliance roadmap.                </p>
+QuickMynt follows industry best practices and is on track to meet SOC 2 Type II, SOC 1 Type II, and ISO 27001 certification standards as part of our compliance roadmap.                
+</p>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
                 <img src={configurable} alt="" />
