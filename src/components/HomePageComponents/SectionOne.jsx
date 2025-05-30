@@ -25,9 +25,9 @@ const SectionOne = () => {
             Workday into <br /> Payday.
           </p>
           <p className="hidden md:block text-[#FDFDFD] text-[1.6769em] font-osande font-[600] leading-[32.71px] text-left">Every Day Earned, Every Day Accessible.</p>
-          <p className="text-[#FDFDFD]  max-w-[20.9375em] md:max-w-[20.563em]  text-[1em] md:text-[1.5em] font-graphik md:font-[400] leading-[24px] md:leading-[35px] text-center md:text-left xl:max-w-[max-content] xl:w-[auto] xl:!min-w-[max-content] xl:leading-tight xl:text-[4vh] tiny:font-[500]  ">
-            QuickMynt delivers a cutting-edge earned wage <br /> access platform, giving employees the freedom to <br /> access their pay on their terms, with no disruptions <br /> to payroll.
-          </p>
+         <p className="text-[#FDFDFD] font-graphik text-[1em] md:text-[1.5em] leading-[24px] md:leading-[35px] text-center md:text-left font-[400] max-w-[90%] md:max-w-[36rem] xl:max-w-[40rem] mx-auto">
+  QuickMynt delivers a cutting-edge earned wage access platform, giving employees the freedom to access their pay on their terms, with no disruptions to payroll.
+</p>
         </div>
         <button
           onClick={() => {

@@ -39,7 +39,7 @@ const SectionEight = () => {
         <section className="w-full bg-[#FCEBE3] flex flex-col justify-start items-center gap-10 pb-10 lg:h-[53.375em]">
         <div className="flex flex-col justify-center items-center max-w-[23.18em] lg:w-full lg:max-w-[90em] gap-8">
             <p className="max-w-[23.18em] w-full lg:max-w-[18.69em] text-[#525B60] font-osande lg:font-graphik font-[700] lg:mb-16 lg:font-[500] text-[1.88em] lg:text-[3em] leading-[40px] lg:leading-[52.8px] text-center">
-                We've partnered with leading payroll providers used by most SMBs
+                We Integrate with leading payroll providers used by most SMBs
             </p>
             <div className="flex flex-wrap lg:flex-nowrap w-full lg:justify-between items-center">
                 {icons.map((ico, idx) => (
@@ -67,8 +67,7 @@ const SectionEight = () => {
                     Security
                 </p>
                 <p className="font-graphik text-[#525B60] font-[400] text-[1.13em] leading-[26px] text-center max-w-[23.6em] h-[6.5em]">
-                    Certified with ISO27001, SOC1 Type II, and SOC2 Type II standards, QuickMynt provides enhanced security with multiple authentication methods.
-                </p>
+QuickMynt follows industry best practices and is on track to meet SOC 2 Type II, SOC 1 Type II, and ISO 27001 certification standards as part of our compliance roadmap.                </p>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
                 <img src={configurable} alt="" />
