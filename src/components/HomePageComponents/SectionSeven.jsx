@@ -66,7 +66,7 @@ const SectionSeven = () => {
           <div className="flex flex-col gap-3 lg:gap-8 items-start  w-full">
             <div
               className={`flex flex-col gap-4 lg:gap-8 transition-all duration-1000
-                      ${showFull ? "h-[48.75em] lg:h-[80.38em]" : "h-[37.5em] lg:h-[61.68em]"} overflow-hidden`}>
+                      ${showFull ? "h-[38.75em] lg:h-[75.38em]" : "h-[30.5em] lg:h-[61.68em]"} overflow-hidden`}>
               <AccordionFAQ accordionData={accordionData} />
             </div>
             <button
