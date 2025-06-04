@@ -16,7 +16,7 @@ const SectionFive = () => {
   ];
 
   return (
-    <section className="flex justify-end lg:justify-center w-full mt-20">
+    <section className="flex justify-end lg:justify-center w-full">
       <div className="flex flex-col lg:flex-row max-w-[23.19em] w-full lg:max-w-[90em] h-[5.28em] lg:h-[7.5em] 
                       justify-center  items-center gap-1 lg:gap-0">
         <div className="flex lg:min-w-[18.88em] z-200">
