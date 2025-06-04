@@ -37,27 +37,28 @@ const SectionEight = () => {
 
     return (
         <section className="w-full bg-[#FCEBE3] flex flex-col justify-start items-center gap-10 pb-10 lg:h-[60.375em]">
-        <div className="flex flex-col justify-center items-center max-w-[23.18em] lg:w-full lg:max-w-[90em] gap-8">
-            <p className="max-w-[23.18em] w-full lg:max-w-[18.69em] text-[#525B60] font-osande lg:font-graphik font-[400] lg:mb-16 lg:font-[500] text-[1.88em] lg:text-[3em] leading-[40px] lg:leading-[52.8px] text-center">
-                We Integrate with leading payroll providers commonly used by SMBs
-                 <p className="font-lg:font-graphik text-sm sm:text-base leading-relaxed text-gray-600 mt-6 sm:mt-10 max-w-full sm:max-w-3xl mx-auto px-4 sm:px-0 text-left">
-  <strong className="text-base sm:text-lg font-semibold block mb-2">Disclaimer</strong>
-  Logos shown represent supported or planned integrations.
-  QuickMynt is independently operated and not affiliated with, endorsed by, or sponsored by these companies.
-  All trademarks are property of their respective owners.
-</p>
+  <div className="flex flex-col justify-center items-center max-w-[23.18em] lg:w-full lg:max-w-[90em] gap-8">
+    <div className="w-[60%]">
+      <div className="text-[#525B60] font-osande lg:font-graphik font-[400] lg:mb-6 lg:font-[500] text-[1.88em] lg:text-[3em] leading-[40px] lg:leading-[52.8px] text-left">
+        We Integrate with leading payroll providers commonly used by SMBs
+      </div>
+      <p className="font-lg:font-graphik text-sm sm:text-base leading-relaxed text-gray-600 mb-10 sm:mt-10 max-w-full text-left">
+        <strong className="text-base sm:text-lg font-semibold block">Disclaimer</strong>
+        Logos shown represent supported or planned integrations.
+        QuickMynt is independently operated and not affiliated with, endorsed by, or sponsored by these companies.
+        All trademarks are property of their respective owners.
+      </p>
+    </div>
 
-            </p>
-           
-            <div className="flex flex-wrap lg:flex-nowrap w-full lg:justify-between items-center">
-                {icons.map((ico, idx) => (
-                    <img src={ico.imgsrc} key={idx} alt="" className={`object-contain ${ico.className} flex-[33.33%] lg:flex-auto mt-3 lg:mt-0`} />
-                ))}
-            </div>
-            <p className="font-lg:font-graphik text-[#273238] font-[400] text-[0.88em] lg:text-[1.5em] leading-[15.4px] lg:leading-[26.4px] text-center">
-                and many other payroll providers
-            </p>
-        </div>
+    <div className="flex flex-wrap lg:flex-nowrap w-full lg:justify-between items-center">
+      {icons.map((ico, idx) => (
+        <img src={ico.imgsrc} key={idx} alt="" className={`object-contain ${ico.className} flex-[33.33%] lg:flex-auto mt-3 lg:mt-0`} />
+      ))}
+    </div>
+    <p className="font-lg:font-graphik text-[#273238] font-[400] text-[0.88em] lg:text-[1.5em] leading-[15.4px] lg:leading-[26.4px] text-center">
+      and many other payroll providers
+    </p>
+  </div>
     
         <div className="flex flex-col lg:flex-row mt-10 gap-10 lg:gap-0 max-w-[23.18em] w-full lg:max-w-[90em] justify-between">
             <div className="flex flex-col justify-center items-center">
